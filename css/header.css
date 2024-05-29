@@ -1,0 +1,114 @@
+@charset "utf-8";
+@import url('font.css');
+
+/* header */
+header {
+    position: fixed;
+    top:0; left:0; right:0;
+    height: 80px;
+    z-index: 50;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0));
+}
+header .hdInner {max-width: 1440px; margin: 0 auto; padding: 0 10px; box-sizing: border-box;}
+header .leftArea {float: left;}
+header .leftArea .logo {float: left; width:160px; height: 80px; line-height: 80px; z-index: 10;}
+header .leftArea .logo img {float: left; margin-top: 22px;}
+/* header -gnb */
+.gnb {float: left; margin-left: 40px; z-index: 10; position: relative;}
+/* .gnb ul {line-height: 0;} */
+.gnb > ul > li {float:left; height: 80px; line-height: 80px; padding-right: 80px;}
+.gnb > ul > li > a {display: block; font-size: 1.8rem; color: #fff; font-weight: 700; text-align: left;}
+
+.gnb > ul .sub {
+    position: absolute; top: 80px; left:0;
+    width: 1120px;
+    margin: 0 auto;
+    display: none;
+    height: 440px;
+    overflow: hidden;
+}
+.gnb > ul .sub > .depth2 {position: absolute; display: flex; flex-wrap:wrap; margin-top: 30px; max-width: 1120px;}
+.gnb > ul .sub > .depth2 > li {width: calc(790px/5); line-height: 1.7;}
+.gnb > ul .sub > .depth2 > li > a {display: block; line-height: 25.5px; margin-bottom: 8px; font-weight: 600; font-size: 1.7rem;}
+.gnb > ul .sub > .depth2 .depth3 li a {display: block; font-size: 1.5rem; color: #666; font-weight: 400; line-height: 2.333em;}
+.gnb > ul .sub > .depth2  .imgBox {width:330px; float: left; margin-top: 10px;}
+.gnb > ul .sub > .depth2.list3 .imgBox, .gnb > ul .sub > .depth2.list4 .imgBox  {margin-left: calc(790px - (790px/5)*3);}
+.gnb > ul .sub > .depth2 .imgBox img{max-width: 100%;}
+
+/* header-rightArea */
+header .rightArea {float: right; z-index: 50; height: 80px; width: 320px;}
+.utilArea {transform: translateY(50%);}
+.utilArea .searchArea {float: left;}
+.utilArea #btnSearch {float: left; width: 40px; height: 40px; background:url(../img/icon/Icon_search_white.png) no-repeat left center/20px; transition: rotate 0.3s;}
+.utilArea #btnCart {float: left; width: 40px; height: 40px; background:url(../img/icon/icon_cart_white.png) no-repeat center/28px; position: relative; margin-right: 2px;}
+.utilArea #btnCart .num {position: absolute; top:0; right:0; box-sizing: border-box; font-weight: 500; color:#333; width: 18px; aspect-ratio: 1/1; border-radius: 50%; background: #fff; display: flex; justify-content: center; align-items: center; font-size: 1.4rem;}
+.menuArea {float: left; overflow: hidden;}
+.menuArea #btnMenu {float: left; width: 40px; height: 40px; background: url(../img/icon/icon_more_white.png) no-repeat center/28px;}
+.menuArea .dropBox {left: 22px;}
+header .rightArea #searchForm {display: none;}
+
+/* utilArea - hover*/
+.utilArea #btnSearch:hover, header.active .utilArea #btnSearch:hover{background-image: url(../img/icon/Icon_search_hover.png); rotate: 10deg;}
+.utilArea #btnCart:hover, header.active .utilArea #btnCart:hover {background-image: url(../img/icon/icon_cart_hover.png);}
+.menuArea #btnMenu:hover, header.active .menuArea #btnMenu:hover {background-image: url(../img/icon/icon_more_hover.png);}
+
+/* header - user */
+.user {float: right;  text-align: left; transform: translateY(-50%); position: relative;}
+.user > ul {float: left; margin-right: 24px;}
+.user > ul+ul {margin-right: 12px;}
+.user > ul > li > a {display: block; font-size: 15px; color: #fff; padding: 5px 0; font-weight: 500;}
+.user .lang span {float: right; width: 7px; height: 4px; background: url(../img/icon/icon_drop_white.png) no-repeat center;padding:6px;}
+.user .dropBox {top: 52px; text-align: right;}
+.user .logIn .dropBox {left:-30px}
+.user .lang .dropBox {right: 20px}
+
+/* .user-hover */
+.user > ul > li > a:hover  {color: #6C801A}
+.user .lang:hover span {background-image: url(../img/icon/icon_drop_hover.png);}
+
+/* header - active */
+header.active .gnb > ul > li > a, header.active .user > ul > li > a {color: #555; transition: all 0.3s;}
+header.active  {background-image: linear-gradient(#fff, #fff); transition: all 0.3s;}
+header.active .utilArea #btnSearch {background-image: url(../img/icon/Icon_search.svg);}
+header.active .utilArea #btnCart {background-image: url(../img/icon/icon_cart_black.png);}
+header.active .menuArea #btnMenu {background-image: url(../img/icon/icon_more_black.png);}
+header.active .user .lang span {background-image: url(../img/icon/icon_drop_black.png);}
+header.active .utilArea #btnCart .num {color:#fff; background: #333;}
+/* header active시 나타나는 배경*/
+#hdBg{width: 100vw; /* min-height: calc(100vh - 45vh - 80px); */ min-height: 440px; background: #fff; z-index: 10; position: fixed; top:80px; border-top: 1px solid #e4e4e4; display: none;}
+#bgBlack {position: fixed; top:0; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.6); z-index: 2; display: none;}
+
+/* rightArea active - 검색창 활성화 */
+header .rightArea.active {width:570px;}
+header .rightArea.active .search {width: 250px; height:40px; padding: 0 20px 0 20px; border-radius: 20px; background:#ECECEC; margin-right: 10px; position: relative; z-index: 10;}
+header .rightArea.active .searchArea #searchForm {float: left; line-height: 40px; background: transparent; border: none; outline: none; width: 180px; display: block; height: 100%;}
+header .rightArea.active #btnSearch {float: right; width: 40px; line-height: 40px; margin: 0; background: url(../img/icon/Icon_search.svg) no-repeat right center/20px;}
+header .rightArea.active #btnSearch img {text-align: right;}
+
+/* searchMenu (rightArea active시) */
+body.scrollStop {width: 100vw; height: 100vh; overflow: hidden;}
+#searchMenu {position: fixed; top: 80px; width: 100vw; height: 100vh; z-index: 10; background: rgba(0, 0, 0, 0.6); border-top: 1px solid #e4e4e4; display: none;}
+#searchMenu.active {display: block;}
+#searchMenu .searchInner {width: 1200px; margin: 0 auto; padding:60px; box-sizing: border-box; background: #fff; position: relative;}
+#searchMenu .searchInner #searchClose {position: absolute; top:30px; right:30px;}
+#searchMenu .chartArea {display: flex; flex-direction: row; justify-content: space-between; height: 520px;}
+#searchMenu .chartArea div {width: 320px;}
+#searchMenu .chartArea div+div {padding-left: 60px; border-left: 1px solid #ddd;} 
+#searchMenu .chartArea .title {font-size: 2.2rem; color: #333; font-weight: 500; display: flex; justify-content: space-between; width: 270px; align-items: flex-end; } 
+#searchMenu .chartArea .title .date {color: #758246; font-size: 1.7rem;}
+#searchMenu .chartArea ul {width: 270px; margin: 45px 50px 0 0; font-size: 1.7rem;}
+#searchMenu .chartArea .chartList ul li, #searchMenu .chartArea .chartList ul li a {display: flex; justify-content: space-between;}
+.chartArea .chartList ul li p span:hover, .chartArea .chartList ul li a:hover {color:#668904; font-weight: 700;}
+#searchMenu .chartArea .chartList ul li+li {margin-top: 20px;}
+#searchMenu .chartArea .chartList ul li a {display: block; display: flex; flex-direction: row; width: 100%; align-items: center;}
+#searchMenu .chartArea .rank li p {padding-right: 10px; color: #333; font-weight: 400;}
+#searchMenu .chartArea .rank li p > b{margin-right: 20px; text-align: center; display: inline-block; width: 20px; color: #668904;}
+#searchMenu .chartArea .rank li .rankStatus {font-weight:700; color: #668904; font-size: 1.4rem; width: 30px; text-align: center;}
+.searchHistory {position: relative;}
+.searchHistory .removeHistoryAll {position: absolute; bottom: 0; right: 50px; font-size: 1.5rem; background: transparent; color: #333; font-weight: 700; padding: 0 0 5px; display: flex; align-items: center; border-bottom: 2px solid #333; letter-spacing: -0.45px;}
+.history li a {display: block;}
+.history li{width: 270px; display: flex; justify-content: space-between; align-items:flex-end;}
+.searchHistory .removeHistoryAll img {margin-right: 4px;}
+.btnRemove {background: transparent; width: 20px; height: 20px; border-radius: 50%; transition: all 0.3s ease; margin-left: 4px;}
+.btnRemove:hover {background: #000;}
+.history .date {font-size: 1.4rem; color: #758246; font-weight: 400;}

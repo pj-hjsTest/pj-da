@@ -1,0 +1,92 @@
+@charset "utf-8";
+@import url('font.css');
+
+/* 공통요소 */
+html {font-size: 0.625rem;}
+body {font-size: 1.6rem; font-family: 'AritaDotum', sans-serif; letter-spacing: -0.03em; color: #333; min-width: 350px; max-width: 480px; line-height: 1.5;}
+button {font-family: inherit; color: inherit}
+.inner {padding: 0 20px;}
+.inner.w0 {padding: 0;}
+img {max-width: 100%;}
+section+section {padding: 40px 0 20px}
+section h3 {font-size: 2.2rem; font-weight: 400; font-family: 'Gowun Dodum', sans-serif; line-height: 1.6; text-align: center; margin-bottom: 15px;}
+section .text {margin-top: 5px; font-size: 1.4rem; color: #999; margin-bottom: 24px;}
+.dropBox {display: none;}
+.dropBox.active {display: block;}
+
+/* 더보기 버튼 공통 */
+.btnP {text-align: center; margin-top: 24px;}
+.btnP .btnMore {display: block; height: 38px; line-height: 38px; border: 1px solid #ddd; color: #666; background: #fff; border-radius: 4px; font-size: 1.5rem;}
+.btnP .btnMore:after {
+    content: '';
+    display: inline-block;
+    width: 5px; height: 9px;
+    margin-left: 10px;
+    background: url(../img/icon/icon_main_btn.png) no-repeat center/cover;
+}
+
+/* mainVisualArea */
+#mainVisualArea {margin-top: 48px; height: 540px; width: 100%; background: url(../img/dada/main_banner_mo.png) no-repeat top left/cover; position: relative;}
+#mainVisualArea .textArea {position: absolute; left: 0; bottom: 0; padding: 20px; font-family: 'Gowun Dodum', sans-serif}
+.textArea .title {line-height: 31px; font-size: 2rem; font-weight: 400; margin-bottom: 18px;}
+.textArea .title span {color: #5A7E62}
+.textArea .desc span {display: block; line-height: 23px; font-size: 1.4rem; color: #666}
+
+/* dadaShowcase */
+#dadaShowcase .titleArea .subTit {font-size: 1.4rem; color:#999; text-align: center; margin-bottom: 24px;}
+#dadaShowcase .titleArea .subTit span {display: block;}
+#dadaShowcase .btnWrap {border: 1px solid #999; border-radius: 4px; text-align: center;}
+#dadaShowcase .btnWrap .btnMore {font-size: 1.5rem; color: #333; font-weight: 600;}
+
+/* dadaShowcase - monthly */
+.monthly {background: #f5f5f5;}
+
+/* dadaShowcase - benefit */
+.benefit .benefitList {display: flex; justify-content: space-between; width: 100%; flex-direction: column;}
+.benefit .benefitList li { background: #f8f8f8; border: 1px solid #ededed; margin-bottom: 20px;}
+.benefit .benefitList li figure img {max-width: 100%;}
+.benefit .benefitList li .textWrap {padding: 20px 20px 30px; box-sizing: border-box;}
+.benefit .benefitList li .titleArea {display: flex; align-items: top; margin-bottom: 12px;}
+.benefit .benefitList li .titleArea b {margin-right: 10px; font-size: 1.8rem; width: 20px; display: inline-block; font-weight: 500; color: #758246; font-family: 'Noto Sans', sans-serif;}
+.benefit .benefitList li .titleArea h4 {text-align: left; font-weight: 500; font-size: 1.8rem; font-family: 'Gowun Dodum', sans-serif; color: #666; letter-spacing: -0.08em; line-height: 1.455em ;}
+.benefit .benefitList li .titleArea h4 span{ color: #758246;}
+.benefit .benefitList li .titleArea h4 span.grayText {font-size: 1.4rem; color:#999; font-weight: 400; letter-spacing: -0.03em;}
+.benefit .benefitList li .textWrap .descArea {letter-spacing: -0.05em; line-height: 21px; color: #666; font-weight: 500; font-size: 1.4rem;}
+.benefit .benefitList li .textWrap .descArea span{ font-size: 1.4rem; color: #999;}
+
+/* teaLife */
+.teaLife .titleArea {margin-bottom: 56px;}
+.teaLife .contArea {display: flex; flex-direction: column; width: 100%;}
+.teaLife .contArea div {width: 100%; padding: 40px 60px 30px 26px; background: url(../img/dada/main_light_pc.png) no-repeat center/cover; box-sizing: border-box;}
+.teaLife .contArea div .title {font-family: 'Gowun Dodum', sans-serif; font-size:2rem; margin-bottom: 10px;}
+.teaLife .contArea div .desc {font-size: 1.4rem; color: #666; font-weight: 500;}
+.teaLife .contArea div .btnMore {display: inline-block; margin: 16px 0 0; font-size: 1.4rem; text-decoration: underline; height: 34px;}
+.teaLife .contArea div .btnMore::after {content: ''; display: inline-block; width: 5px; height: 9px; background: url(../img/icon/icon_arrowgray_btn.png) no-repeat center/cover; margin-left: 9px;}
+.teaLife .contArea  .dadaDelevery {background-image: url(../img/dada/main_deli_pc.png);}
+
+/* dadaFaq */
+#dadaFaq .titleArea {margin-bottom: 20px;}
+#dadaFaq .compareTab {margin-bottom: 30px;}
+.compareTab .compareTabBox {display: flex;text-align: center;}
+.compareTab .compareTabBox li {width: calc(100%/3); color: #999; background: #f5f5f5; font-size: 1.4rem; font-weight: 600; height: 100%;  height: 40px; line-height: 40px; box-sizing: border-box; border-right: 1px solid #fff;}
+.compareTab .compareTabBox li.active {background: #5a7e62; color:#fff}
+.compareTab .compareCont {border: 1px solid #5A7E62;}
+/* compareCont table 공통 */
+.compareCont li {display: none;}
+.compareCont li.active {display: block;}
+.compareCont table tr {border-bottom: 1px solid #ddd;}
+.compareCont table th {padding: 10px; text-align: center; font-size: 1.3rem; font-weight: 600; width: calc(100%/3); border-right: 1px solid #ddd;}
+.compareCont table td {padding: 10px 0; text-align: center; font-size: 1.2rem; color: #999; word-break: keep-all;}
+.compareCont table .txt_red {color: #d97e7e}
+.compareCont table .btnMore {display: inline-block; margin: 16px 0 0; font-size: 1.4rem; text-decoration: underline; height: 34px; color: #555}
+.compareCont table .btnMore::after {content: ''; display: inline-block; width: 5px; height: 9px; background: url(../img/icon/icon_arrowgray_btn.png) no-repeat center/cover; margin-left: 9px;}
+/* dadaFaq - dadaNotice */
+.dadaNotice .noticeArea {background: #fbfbfb; padding: 17px}
+.dadaNotice .noticeArea li {margin-bottom: 32px; font-family: 'Noto Sans kr', sans-serif; margin-left: 5px;}
+.dadaNotice .noticeArea .listTit {color: #333; font-weight: 500; font-size: 1.4rem; padding: 7px 0; position: relative;}
+.dadaNotice .noticeArea .listTit::before {content: ''; width: 2px; height: 2px; background: #333; border-radius: 50%; margin-right: 5px; position: absolute; left: -8px; top:50%; transform: translateY(-50%);}
+.dadaNotice .noticeArea .listDesc {font-size: 1.4rem; color:#999;}
+
+/* goToTop */
+#goToTop {position: fixed; bottom: 40px; /* right: 20px; */  right: -35px; width: 34px; height: 34px; transition: all 0.3s ease; opacity: 0.8;}
+#goToTop.on {right: 20px; opacity: 1;}

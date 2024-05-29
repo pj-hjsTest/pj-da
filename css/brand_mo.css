@@ -1,0 +1,118 @@
+@charset "utf-8";
+@import url('font.css');
+
+/* 공통요소 */
+html {font-size: 0.625rem;}
+body {font-size: 1.6rem; font-family: 'AritaDotum', sans-serif; letter-spacing: -0.03em; color: #333; min-width: 350px; line-height: 1.5;}
+button {font-family: inherit; color: inherit}
+.inner {padding: 0 20px;}
+.inner.w0 {padding: 0;}
+img {max-width: 100%;}
+section+section {padding: 40px 0 20px}
+section h3 {font-size: 2.2rem; font-weight: 400; font-family: 'Gowun Dodum', sans-serif; line-height: 1.6; text-align: center; margin-bottom: 15px;}
+section .text {margin-top: 5px; font-size: 1.4rem; color: #999; margin-bottom: 24px;}
+.dropBox {display: none;}
+.dropBox.active {display: block;}
+section .inner {width: 100%;}
+section:nth-of-type(n+5) .titleArea h3 {font-size: 2.6rem;}
+/* 더보기 버튼 공통 */
+.btnP {text-align: center; margin-top: 24px;}
+.btnP .btnMore {display: block; height: 38px; line-height: 38px; border: 1px solid #ddd; color: #666; background: #fff; border-radius: 4px; font-size: 1.5rem;}
+.btnP .btnMore:after {
+    content: '';
+    display: inline-block;
+    width: 5px; height: 9px;
+    margin-left: 10px;
+    background: url(../img/icon/icon_main_btn.png) no-repeat center/cover;
+}
+
+/* mainVisualArea */
+#mainVisualArea {width: 100%; height: calc(100vh - 20px); overflow: hidden; margin-top: 48px; position: fixed; top:0; z-index: -1;}
+#mainVisualArea .videoArea {position:relative; width: 100vw; height: 100vh; background: pink;}
+#mainVisualArea img{max-width: 100%;}
+#mainVisualArea .videoTitleArea {display:flex; height: 100%; align-items: center; justify-content: center; position: absolute; top:0; width: 100%; flex-direction: column; z-index: 30;}
+#mainVisualArea .videoTitleArea h1 {font-size: 2.6rem; color: #fff; font-weight: 300; letter-spacing: 6px; font-family: 'Gowun Dodum', sans-serif; margin-bottom: 40px;}
+#mainVisualArea .videoTitleArea .desc {font-weight: 400; color: rgba(255,255,255,0.8); font-size: 1.8rem; letter-spacing: normal; line-height: 1.65; font-weight: 500; text-align: center;}
+
+/* brandStory */
+#brandStory {margin-top: 130vh; background: #fff; width: 100vw; box-sizing: border-box; padding: 0;}
+.slideContent .titleArea {padding-top: 30px;}
+#brandStory .brandStoryWrap .slideContent h3 {font-size: 2.6rem;}
+#brandStory .brandStoryWrap .slideContent .subTitle {font-size: 1.5rem; margin-bottom: 40px;}
+/* brandStroy - brandStoryWrap/ 스와이퍼 커스텀 */
+.brandStoryWrap .swiper-wrapper {height: 700px;}
+#brandStory .swiper-slide {width: 90%;}
+#brandStory .swiper-slide.prev, #brandStory .swiper-slide.next  {display: none;}
+#brandStory .brandStoryWrap .swiper-button-prev, #brandStory .brandStoryWrap .swiper-button-next {width: 24px; height: 24px; border: none; transform: none; border-radius: unset; left:20px;  top:45%;}
+#brandStory .brandStoryWrap .swiper-button-next {left: unset; right: 20px;transform:rotate(180deg);}
+/* 콘텐츠 */
+.brandStoryWrap {padding-bottom: unset;}
+#brandStory .brandStoryWrap .slideContent .caption {font-size: 1.5rem; margin: 30px 20px;}
+
+
+/* teaField */
+#teaField .teaFieldInfo  {height: 80vh;}
+/*  teaField - teaMain */
+#teaField .teaMain {flex-direction: column; justify-content: flex-start;}
+#teaField .teaMain .teaFieldTitle {width: 100%;}
+.teaFieldTitle h3 {margin-bottom: 16px; font-weight: 500; text-align: left;font-size: 2.6rem;}
+.teaFieldTitle .desc {font-size: 1.5rem; margin-bottom: 20px;}
+#teaField .btnDropbox {font-size: 1.5rem; margin-bottom: 60px;}
+
+.teaFieldInfo .teaFieldCont .mainTit {flex-direction: column-reverse;padding: 70px 0 0;}
+.teaFieldTitle .fieldElementWrap {height: 30px;}
+.teaFieldTitle .fieldElementWrap img {margin: unset; margin-right: 6px;}
+.teaFieldInfo .teaFieldCont .mainTit h3{font-size: 2.4rem; padding-top: 10px; margin-bottom: 30px;}
+.teaFieldInfo .teaFieldCont .desc {font-weight: 600; margin-bottom: 20px;}
+.teaFieldInfo .locationInfo {font-size: 1.5rem; bottom: 60px; width: 100%; left:0; transform: unset; text-align: center;}
+
+/* modal */
+#teaField .modalBox .modalHeader .btnModalClose {padding: unset;}
+#teaField #tea_hannam .modalBox {width: 80%;}
+
+/* speciality */
+#speciality {padding: 100px 0 80px;}
+#speciality .inner {max-width: 100%; margin: unset; box-sizing: border-box;}
+#speciality h3 {font-size: 2.6rem;}
+#speciality .subTitle {font-size: 1.5rem; margin-bottom: 60px; text-align: center; padding: 0 40px;}
+.specialityList li {width:100%; height: 80vh; margin: 0; background:none; display: block; margin-bottom: 20px;}
+.specialityList .itemTitleArea {width: 60%; background: none; height: 100%; float: left; position: relative; z-index: 100; padding: 24px 0 24px 24px;}
+.specialityList .itemTitleArea .title {font-size: 2.6rem;}
+.tabButtonWrap button {font-size: 1.5rem;}
+.specialityList .itemTitleArea.green, .specialityList .itemTitleArea.yellow,
+.specialityList .itemTitleArea.black {background-color: unset;}
+.specialityList .tabContBox {width: 100%; height: 100%;}
+/* speciality -tabContBox */
+.specialityList .tabContBox div .caption { bottom: 50%; transform: translateY(50%); background: rgba(0,0,0,0.6);}
+.specialityList .tabContBox div+div figure {display: none;}
+/* since */
+#since .inner {width: 100%; box-sizing: border-box; padding: 0 20px;}
+#since .titleArea h3, #people .titleArea h3,   #dadaLife .titleArea h3 {margin-bottom: 16px;}
+#since .titleArea .subTitle,  #people .titleArea  .subTitle,    #dadaLife .titleArea  .subTitle{font-size: 1.5rem; margin-bottom: 60px; padding: 0 10px; word-break: keep-all;} 
+.sinceInfoArea .sinceAbout .swiper-slide .title {font-size: 1.8rem; margin-bottom: 10px;}
+.sinceInfoArea .sinceAbout .swiper-slide .desc {font-size: 1.4rem;}
+.sinceInfoArea .sinceAbout .swiper-slide {width: 290px;}
+
+/* people */
+#people {padding: 100px 20px 80px;}
+.peopleInfoArea .peopleAbout .swiper-slide .caption {font-size: 1.4rem;}
+
+/* dadaLife */
+#dadaLife {padding: 100px 20px 80px;}
+#dadaLife .inner {max-width: 100%; padding: unset;}
+#dadaLife .dadaLifeList ul {flex-direction: column; gap: 20px;}
+#dadaLife .dadaLifeList ul li {width: 100%; margin: unset;}
+#dadaLife .dadaLifeList .section-row .col-2 {display: none; gap: none; height: 100%; gap: unset;}
+#dadaLife .dadaLifeList ul li .desc {font-size: 1.6rem; padding: 50px 25px; width: 400px;}
+#dadaLife .dadaLifeList ul li .desc.top {top:unset; bottom: 0}
+
+/* moreStory */
+#moreStory {padding: 80px 20px 100px; margin: unset;}
+#moreStory .inner {width: 100%; margin: unset; padding: none; box-sizing: border-box;}
+#moreStory .titleArea h3 {font-size: 2.4rem; margin-bottom: 24px;}
+#moreStory .btnArea {flex-direction: column; gap: 27px; align-items: center;}
+
+/* footer */
+footer {background: #fff;}
+footer .ftUser {background: #fff;}
+footer .ftUser  {margin: 0 0 9px;}

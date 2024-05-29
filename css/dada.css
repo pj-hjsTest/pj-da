@@ -1,0 +1,102 @@
+@charset "utf-8";
+@import url('reset.css');
+@import url('font.css');
+
+/* 공통요소 */
+html {font-size: 0.625rem;}
+body {font-size: 1.6rem; font-family: 'AritaDotum', sans-serif; letter-spacing: -0.03em; color: #333;}
+.dropBox {position: absolute; top: 60px; text-align: right; background: #fff; display: none;}
+.dropBox li:last-child {padding-bottom: 25px;}
+.dropBox li a {display: block; color:#555; font-size: 15px; font-weight: 400; padding: 20px 20px 8px;}
+section+section {padding: 120px 0 0;}
+section:last-child {margin-bottom: 60px;}
+section .inner {max-width: 1200px; padding: 0 20px; margin: 0 auto; line-height: 1.6;}
+section .inner.w0 {padding: 0;}
+
+/* mainVisualArea */
+#mainVisualArea {margin-top: 80px; height: 600px; background: url(../img/dada/main_banner_pc_1.png) no-repeat center/cover; position: relative;}
+#mainVisualArea .inner{position: absolute;  top:0; left: 0; padding: 80px 130px 0;}
+#mainVisualArea .inner img{width: 101px;}
+#mainVisualArea .textArea {margin-top: 70px; font-family: 'Gowun Dodum', sans-serif;}
+#mainVisualArea .textArea .title {font-size: 3.2rem; font-weight: 400;  margin-bottom: 18px; letter-spacing: -0.03em; line-height: 1.5;}
+#mainVisualArea .textArea .title span {color:#5A7E62}
+#mainVisualArea .textArea .desc {font-size: 2rem; color: #666; width: 620px; line-height: 1.8em;}
+
+/* #dadaShowcase */
+#dadaShowcase .titleArea {text-align: center;}
+#dadaShowcase .titleArea h3 {font-family: 'Gowun Dodum', sans-serif; margin-bottom: 15px; font-weight: 500; font-size: 3.2rem;}
+#dadaShowcase .titleArea .subTit {color: #999; line-height: 28px; font-size: 1.8rem; letter-spacing: -0.03em; margin-bottom: 60px; font-weight: 400;}
+#dadaShowcase .titleArea .subTit span {display: block;}
+#dadaShowcase figure {text-align: center;}
+#dadaShowcase .btnWrap {margin-top: 20px; text-align: center;}
+#dadaShowcase .btnWrap .btnMore {color: #555; font-size: 1.5rem; width: 200px; height: 47px; box-sizing: border-box; border-radius: 4px; border: 1px solid #999; display: inline-block; line-height: 47px; position: relative; padding-right: 8px;}
+#dadaShowcase .btnWrap .btnMore::after {content: ''; position: absolute; top:50%; transform: translateY(-50%); width: 5px; height: 9px; background: url(../img/icon/icon_arrowgray_btn.png) no-repeat right/5px; margin-left: 10px;}
+
+/* dadaShowcase - benefit */
+.benefit .benefitList {display: flex; justify-content: space-between; width: 100%;}
+.benefit .benefitList li {width: calc(100%/3); margin-right: 40px; background: #f8f8f8; border: 1px solid #ededed;}
+.benefit .benefitList li:last-child{margin-right: 0;}
+.benefit .benefitList li figure img {max-width: 100%;}
+.benefit .benefitList li .textWrap {padding: 30px 30px 40px; box-sizing: border-box;}
+.benefit .benefitList li .titleArea {display: flex; align-items: top; margin-bottom: 12px;}
+.benefit .benefitList li .titleArea b {margin-right: 10px; font-size: 1.8rem; width: 20px; display: inline-block; font-weight: 500; color: #758246; font-family: 'Noto Sans', sans-serif;}
+.benefit .benefitList li .titleArea h4 {text-align: left; font-weight: 500; font-size: 2.2rem; font-family: 'Gowun Dodum', sans-serif; color: #666; letter-spacing: -0.08em; line-height: 1.455em ;}
+.benefit .benefitList li .titleArea h4 span{ color: #758246;}
+.benefit .benefitList li .titleArea h4 span.grayText {font-size: 1.8rem; color:#999; font-weight: 400; letter-spacing: -0.03em;}
+.benefit .benefitList li .textWrap .descArea {letter-spacing: -0.05em; line-height: 26px; color: #666; font-weight: 500}
+.benefit .benefitList li .textWrap .descArea span{ font-size: 1.4rem; color: #999;}
+
+/* challenge */
+#dadaShowcase.challenge .inner {padding: 0 50px; box-sizing: border-box;}
+#dadaShowcase.challenge .titleArea .subTit {color: #666;}
+.challenge .contArea {background: #f8f8f8; overflow: hidden;}
+.challenge .contArea figure {float: left; width: 300px; height: 280px; background: url(../img/dada/dada_challenge_event.jpg) no-repeat center/cover;}
+.challenge .contArea .textWrap {float: left;padding: 30px 40px; width: calc(100% - 300px); height: 280px; box-sizing: border-box;}
+.challenge .contArea .textWrap .title {font-family: 'Gowun Dodum', sans-serif; margin-bottom: 10px; font-weight: 500; font-size: 2.8rem;}
+.challenge .contArea .textWrap .desc {line-height: 1.6; color: #888; font-size: 1.8rem; letter-spacing: -0.03em; font-weight: 400; margin-bottom: 30px;}
+#dadaShowcase.challenge .contArea .textWrap .btnWrap {text-align: left;}
+#dadaShowcase.challenge .contArea .textWrap .btnWrap .btnMore {width: 180px; height: 36px; line-height: 36px; text-align: center;}
+
+/* teaLife */
+.teaLife .titleArea {margin-bottom: 56px;}
+.teaLife .contArea {display: flex; width: 100%;}
+.teaLife .contArea div {width: 50%; padding: 50px 50px 50px 34px; background: url(../img/dada/main_light_pc.png) no-repeat center/cover;}
+.teaLife .contArea div .title {font-family: 'Gowun Dodum', sans-serif; font-size: 24px; margin-bottom: 10px;}
+.teaLife .contArea div .desc {font-size: 1.8rem; color: #666; font-weight: 500;}
+.teaLife .contArea div .btnMore {display: inline-block; margin: 16px 0 0; font-size: 1.5rem; text-decoration: underline;}
+.teaLife .contArea div .btnMore::after {content: ''; display: inline-block; width: 5px; height: 9px; background: url(../img/icon/icon_arrowgray_btn.png) no-repeat center/cover; margin-left: 9px;}
+.teaLife .contArea  .dadaDelevery {background-image: url(../img/dada/main_deli_pc.png);}
+
+/* dadaFaq */
+#dadaFaq h3 {font-size: 2.2rem; font-weight: 600; margin-bottom: 10px;}
+#dadaFaq .faqArea {border-top: 1px solid #333; border-bottom: 1px solid #333;}
+#dadaFaq .faqArea li button, #dadaFaq .faqArea li .ansCont {padding: 25px 25px 25px 40px; width: 100%; font-size: 2rem; box-sizing: border-box;text-align: left; letter-spacing: -0.06em;}
+#dadaFaq .faqArea li .ansCont {background: #f6f6f6; display: flex; width: 100%; padding: 40px 25px 40px 40px; font-size: 1.8rem; display: flex; align-items: top}
+/* Q&A 아이콘 영역 */
+.icoA, .icoQ {margin-right: 3px; font-weight: 600;  color: #bbb;font-family: 'AritaDotum', sans-serif; font-size: 2.4rem; padding-right: 10px;}
+.btnFaq.active .icoQ {color: #333;}
+.icoA {color:#5A7E62;}
+#dadaFaq .faqArea li .btnFaq {position: relative; border-bottom: 1px solid #f2f2f2; background: none;}
+#dadaFaq .faqArea li .btnFaq::after {content: ''; position: absolute; width: 40px; height: 40px; right:0; background: url(../img/icon/icon_accordion_open.svg) no-repeat center; top: 50%; transform: translateY(-50%); padding: 10px;}
+#dadaFaq .faqArea li .btnFaq.active::after {background-image: url(../img/icon/icon_accordion_close.svg);}
+#dadaFaq .faqArea li .ansCont .ansBox {font-size: 2rem; padding-top: 2px;}
+/* dadaFaq - ansTable */
+.ansTable  {width: 100%;}
+.ansTable thead th {width: 250px; background: #87A57C; color: #fff; padding: 10px; font-weight: 600; text-align: center; font-size: 2rem;}
+.ansTable thead th:first-child {box-sizing: border-box;}
+.ansTable tbody tr {border-bottom: 1px solid #ddd;}
+.ansTable tbody tr td {padding: 10px 40px; text-align: center; color: #666; font-weight: 500;}
+.ansTable tbody tr th {background: rgba(202, 226, 192, 0.2); text-align: right; padding-right: 20px; box-sizing: border-box; vertical-align: middle; font-weight: 500;}
+.ansTable tbody tr td:nth-child(2n) {background: rgba(255, 255, 255, 0.35);}
+/* 답변 박스 안 보이게 처리 */
+/* #dadaFaq .faqArea li .ansCont.active {display: flex;} */
+#dadaFaq .faqArea li .ansCont {display: none;}
+/*  dadaFaq - dadaNotice */
+#dadaFaq .dadaNotice {padding: 50px 40px; margin: 60px 0; background: #f6f6f6; font-weight: 500;}
+#dadaFaq .dadaNotice .title {font-size: 2.2rem; margin-bottom: 5px;}
+#dadaFaq .dadaNotice .noticeArea {line-height: 38px; font-size: 2rem; color: #999; }
+#dadaFaq .dadaNotice .noticeArea li::before {content: ''; display: inline-block; height: 5px; width: 5px; background: #999; border-radius: 50%; vertical-align: 5px; text-align: left;}
+
+/* goToTop */
+#goToTop {position: fixed; bottom: 40px; /* right: 20px; */  right: -50px; width: 32px; height: 32px; transition: all 0.3s ease-in-out; opacity: 0.8;}
+#goToTop.on {right: 20px; opacity: 1;}

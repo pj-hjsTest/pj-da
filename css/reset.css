@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+html, body, head, title, h1, h2, h3, h4, h5, h6, p, div, blockquote, address, ul, ol, li, dl, dt, dd, table, tr, th, td, caption, thead, tbody, tfoot, form, legend, fieldset, header, nav, aside, figure, section, article, main, footer {margin: 0; padding: 0;}
+header, nav, aside, section, article, main, footer, figure {display: block;}
+
+a {text-decoration: none; color: inherit;}
+li {list-style: none;}
+table {border-collapse: collapse;}
+img, fieldset, input, select, textarea, button {border: none;}
+label, img, input, select, textarea, button, a{vertical-align: middle;}
+button {cursor: pointer;}
+/* 인라인 요소 세로축 중심 정렬 */
+em,i,address,cite {font-style: none;} /* 기울기 초기화 */
+
+caption, .blind {font-size: 0; line-height: 0; height: 0; overflow: hidden; text-indent: -9999px;}
+
+.clear:before, .clear:after {content: ''; display: block; clear: both;}

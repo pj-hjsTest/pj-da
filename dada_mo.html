@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다다일상 | 오설록</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/dada_mo.css">
+    <link rel="stylesheet" href="css/hd_mo.css">
+    <link rel="stylesheet" href="css/ft_mo.css">
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div class="leftArea">
+                <h1 class="logo"><a href="mobile.html"><img src="img/icon/logo_black.png" alt=""><span class="blind">오설록</span></a></h1>
+            </div>
+            <div class="utilArea">
+                <a href="#" id="btnSearch"></a>
+                <a href="#" id="btnCart"><span class="num">0</span></a>
+                <a href="#" id="btnMenu"></a>
+            </div>
+        </div>
+    </header>
+    <aside id="sideMenu">
+        <div class="inner">
+            <div class="menuTop clear">
+                <a href="#" id="btnLogIn">로그인</a>
+                <a href="#" id="btnClose"><img src="img/icon/icon_mo_nav_close.png" alt=""></a>
+            </div>
+            <div class="signBox">
+                <p class="text">가입하고 <b>10% 쿠폰</b>을 바로 사용해보세요.</p>
+                <button id="btnJoin">회원가입</button>
+            </div>
+        </div>
+        <!-- // 상단 영역 -->
+        <div class="gnbInner">
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <div><a href="#">제품</a></div>
+                        <ul class="depth2">
+                            <li><a href="#">베스트</a></li>
+                            <li><a href="#">티 제품</a></li>
+                            <li><a href="#">티푸드</a></li>
+                            <li><a href="#">티웨어</a></li>
+                            <li><a href="#">라이프 스타일</a></li>
+                            <li><a href="#">단체 및 기업 구매</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div><a href="#">선물추천</a></div>
+                    </li>
+                    <li>
+                        <div><a href="dada_mo.html">다다일상</a></div>
+                        <ul class="depth2">
+                            <li><a href="#">다다일상 구독</a></li>
+                            <li><a href="#">다다일상 챌린지</a></li>
+                            <li><a href="#">다다일상 기록</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div><a href="brand_mo.html">브랜드</a></div>
+                        <ul class="depth2">
+                            <li><a href="#">오설록 스토리</a></li>
+                            <li><a href="#">제주 티뮤지엄</a></li>
+                            <li><a href="#">매장 소개 및 예약</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- //mo_gnb -->
+        <div class="inner">
+            <div class="MenuBanner">
+                <img src="img/dada_aug.jpg" alt="8월의 다다일상">
+            </div>
+            <div class="menuBtm">
+                <div class="linkWrap"><a href="#">매장찾기</a></div>
+                <div class="linkWrap"><a href="#">공지사항</a></div>
+                <div class="linkWrap"><a href="#">고객센터</a></div>
+                <div class="linkWrap"><a href="#">뷰티포인트 추후 적립</a></div>
+            </div>
+        </div>
+    </aside>
+    <!-- //menuArea 사이드메뉴 -->
+    <div id="searchArea">
+        <div class="inner">
+            <div class="searchTopArea clear">
+                <div class="searchTab">
+                    <input type="text" placeholder="검색어를 입력해주세요">
+                    <a href="#" class="btnSearch"></a>
+                </div>
+                <button id="btnSearchClose"><img src="img/icon/btn_closeSearch.svg" alt="닫기"></button>
+            </div>
+        </div>
+        <!-- //searchTopArea -->
+        <div class="inner w0">
+            <div class="chartArea">
+                <ul class="chartTab">
+                   <li class="popular active">인기 검색어</li>
+                   <li class="recent">최근 검색어</li>
+                </ul>
+                <div class="chartCont popualr active">
+                    <ul id="chartList" class="resultPopualr">
+                        <!-- <li><a href="#"><b>1</b><span>세작</span></a></li> -->
+                    </ul>
+                    <p class="date">23.09.06기준</p>
+                </div>
+                <!-- //tab1 -->
+                <div class="chartCont">
+                    <ul id="chartList" class="resultHistory">
+                        <!-- <li class="historyText">최근 검색어가 없습니다
+                        </li> -->
+                        <li>
+                            <a href="#"><span>내용입력은 span</span></a>
+                            <div class="rightArea">
+                                <p class="date">00.00</p>
+                                <button class="btnRemove"><img src="img/icon/icon_rankDel.svg" alt=""></button>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="btnWrap"><button class="removeHistoryAll"><img src="img/icon/Icon_trash.svg" alt="">검색 기록 삭제</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //searchArea -->
+    <section id="mainVisualArea">
+        <div class="inner">
+            <div class="textArea">
+                <p class="title">다다일상은 다채롭고 다양한<br> 일상을 위한 오설록 만의<br> 특별한 <span>차 구독 서비스</span>입니다
+                </p>
+                <p class="desc">
+                    <span>매일 똑같은 하루가 지겹다면</span>
+                    <span>티 한잔으로 당신의 일상에 색깔을 불어넣으세요.</span>
+                    <span>다채로운 차 향기로 더욱 풍요로워지는 </span>
+                    <span>티 라이프를 만나보세요.</span>
+                </p>
+            </div>
+            <!-- //textArea -->
+        </div>
+    </section>
+    <!-- //mainVisualArea -->
+    <section id="dadaShowcase" class="monthly">
+        <div class="inner">
+            <div class="titleArea">
+                <h3>이달의 다다일상</h3>
+                <p class="subTit">
+                    <span>오설록 티 소믈리에가 그달의 테마와 어울리는</span><span>차들을 선정하여 보내드립니다.</span>
+                    <span>매월 향기로운 선물같은 일상을 선사합니다.</span>
+                </p>
+            </div>
+            <!-- //titleArea -->
+            <figure><img src="img/dada/sub_cont_01_mo.jpg" alt="9월의 다다일상"></figure>
+            <div class="btnWrap">
+                <a href="#" class="btnMore">자세히 보기</a>
+            </div>
+        </div>
+    </section>
+    <!-- //monthly -->
+    <section id="dadaShowcase" class="benefit">
+        <div class="inner">
+            <div class="titleArea">
+                <h3>다다일상 베네핏</h3>
+                <p class="subTit">
+                    다다일상 구독자에게만 제공해 드리는 특별한 혜택을<br> 경험해보세요.다다일상과 함께 더욱 쉽고 편하게 즐거운 티<br>라이프를 누릴 수 있어요.
+                </p>
+            </div>
+            <!-- //titleArea -->
+            <ul class="benefitList">
+                <li>
+                    <figure><img src="img/dada/benefit1.png" alt=""></figure>
+                    <div class="textWrap">
+                        <div class="titleArea">
+                            <b>01</b>
+                            <h4>더욱 즐거운 찻자리를 위해<br>매월 증정되는 <span>스페셜 기프트</span></h4>
+                        </div>
+                        <div class="descArea">
+                            <p>매월 찻잔, 티매트, 티푸드 등 풍성한 티 테이블을 즐기실 수 있는 선물이 발송됩니다. 다다일상과 함께 즐거운 티 테이블을 SNS에 인증해보세요.</p>
+                            <span>(서비스 증정품으로, 구독 가격에 포함되지 않습니다)</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <figure><img src="img/dada/benefit2.png" alt=""></figure>
+                    <div class="textWrap">
+                        <div class="titleArea">
+                            <b>02</b>
+                            <h4>나만의 일상을 기록할 수 있는<br><span>티 다이어리 제공</span><span class="grayText">(6개월 구독자 한정)</span></h4>
+                        </div>
+                        <div class="descArea">
+                            <p>차와 함께 일상을 기록할 수 있는 티 다이어리를 제공해드립니다. 다다일상과 함께 풍성해진 티라이프를 기록해보세요.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <figure><img src="img/dada/benefit3.png" alt=""></figure>
+                    <div class="textWrap">
+                        <div class="titleArea">
+                            <b>03</b>
+                            <h4>이달의 티타임 챌린지 참여 시<br>받을 수 있는 <span>챌린지 리워드</span></h4>
+                        </div>
+                        <div class="descArea">
+                            <p>일상에서 차를 쉽고 재미있게 즐길 수 있는 다양한 챌린지가 진행됩니다. 챌린지에 참여하시고 다채로운 리워드도 받아보세요.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- //benefit -->
+    <section id="dadaShowcase" class="teaLife">
+        <div class="inner">
+            <div class="titleArea">
+                <h3>조금 더 가벼운 티라이프도 만나보세요.</h3>
+            </div>
+            <div class="contArea">
+                <div class="dadaLight">
+                    <p class="title">다다일상 라이트</p>
+                    <p class="desc">매월 다양한 차들을 가볍게 만나요.</p>
+                    <a href="#" class="btnMore">자세히 보기</a>
+                </div>
+                <div class="dadaDelevery">
+                    <p class="title">정기배송</p>
+                    <p class="desc">매월 내가 원하는 차를 편하게 만나요.</p>
+                    <a href="#" class="btnMore">자세히 보기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //teaLife -->
+    <section id="dadaFaq">
+        <div class="inner">
+            <div class="titleArea">
+                <h3>다다일상 ㅣ 다다일상 라이트 ㅣ<br>정기배송 안내 </h3>
+            </div>
+            <div class="compareTab">
+                <ul class="compareTabBox">
+                    <li class="active">다다일상</li>
+                    <li>다다일상 라이트</li>
+                    <li>정기배송</li>
+                </ul>
+                <ul class="compareCont">
+                    <li class="dadaLife active">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>매월 구성</th>
+                                    <td>*매월 다른 구성*<br>큐레이션 티 + 이달의 티레터<br>+ 티 테이블 기프트</td>
+                                </tr>
+                                <tr>
+                                    <th>무료 배송</th>
+                                    <td>O</td>
+                                </tr>
+                                <tr>
+                                    <th>챌린지 참여</th>
+                                    <td>O</td>
+                                </tr>
+                                <tr>
+                                    <th>정기구독 리워드<br>(6개월 단위)</th>
+                                    <td class="txt_red">X</td>
+                                </tr>
+                                <tr>
+                                    <th>가격 안내</th>
+                                    <td>1개월 24,900원/월<br>3개월 22,900원/월<br>6개월 19,900원/월</td>
+                                </tr>
+                                <tr>
+                                    <th>결제 방식</th>
+                                    <td>매월 자동 결제<br>3개월/5개월 구독 시, 묶음 결제</td>
+                                </tr>
+                                <tr>
+                                    <th>이달의 구성 및<br>상세 내용은 각 페이지에서 확인하세요</th>
+                                    <td><a href="#" class="btnMore">자세히 보기</a></td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li class="dadaLite">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>매월 구성</th>
+                                    <td>*매월 다른 구성*<br>티 2종 + 모먼트 카드</td>
+                                </tr>
+                                <tr>
+                                    <th>무료 배송</th>
+                                    <td>O</td>
+                                </tr>
+                                <tr>
+                                    <th>챌린지 참여</th>
+                                    <td class="txt_red">X</td>
+                                </tr>
+                                <tr>
+                                    <th>정기구독 리워드<br>(6개월 단위)</th>
+                                    <td class="txt_red">X</td>
+                                </tr>
+                                <tr>
+                                    <th>가격 안내</th>
+                                    <td>매월 13,900원</td>
+                                </tr>
+                                <tr>
+                                    <th>결제 방식</th>
+                                    <td>매월 자동 결제</td>
+                                </tr>
+                                <tr>
+                                    <th>이달의 구성 및 상세 내용은<br>각 페이지에서 확인하세요</th>
+                                    <td><a href="#" class="btnMore">자세히 보기</a></td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li class="dadaDelivery">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>매월 구성</th>
+                                    <td>내가 원하는 차<br>매월 정기배송</td>
+                                </tr>
+                                <tr>
+                                    <th>무료 배송</th>
+                                    <td>O</td>
+                                </tr>
+                                <tr>
+                                    <th>챌린지 참여</th>
+                                    <td class="txt_red">X</td>
+                                </tr>
+                                <tr>
+                                    <th>정기구독 리워드<br>(6개월 단위)</th>
+                                    <td>O</td>
+                                </tr>
+                                <tr>
+                                    <th>가격 안내</th>
+                                    <td>상시 15% 할인</td>
+                                </tr>
+                                <tr>
+                                    <th>결제 방식</th>
+                                    <td>매월 자동 결제</td>
+                                </tr>
+                                <tr>
+                                    <th>이달의 구성 및 상세 내용은<br>각 페이지에서 확인하세요</th>
+                                    <td><a href="#" class="btnMore">자세히 보기</a></td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+            <!-- //faqArea -->
+            <div class="dadaNotice">
+                <div class="titleArea">
+                    <h3>구독 서비스 이용 시<br>아래 안내사항을 꼭 확인해주세요</h3>
+                </div>
+                <ul class="noticeArea">
+                    <li>
+                        <p class="listTit">자동 결제일</p>
+                        <p class="listDesc">매월 1일 ~ 28일 중 고객님이 첫 구독 결제하신 일로 최초 자동 결제일이 지정됩니다.</p>
+                    </li>
+                    <li>
+                        <p class="listTit">결제일 변경</p>
+                        <p class="listDesc">기존 결제일 기준 2일 전까지 자유롭게 변경 가능합니다.</p>
+                    </li>
+                    <li>
+                        <p class="listTit">배송지 변경</p>
+                        <p class="listDesc">기존 결제일 기준 2일 전까지 자유롭게 변경 가능하며, 구독 서비스 배송지 변경은 기본 배송지와 변경 방법이 상이합니다. <br>구독 서비스 배송지 변경은 맨 아래의 ‘각종 변경 및 취소, 해지 경로 안내’를 참고해주세요.</p>
+                    </li>
+                    <li>
+                        <p class="listTit">주문 취소</p>
+                        <p class="listDesc">주문 취소는 [결제 완료] 단계에서만 가능하며 즉시 처리됩니다. <br>주문 취소는 구독 해지가 아닙니다. 결제 완료 - 출고 이전에 한 해 당월 주문 건만 취소 됨을 참고 부탁드립니다. <br>매월 결제 상품은 당월 분 주문 취소 후 환불은 결제 대행사를 통해 진행되며, 영업일 기준 1~7일까지 소요될 수 있습니다. <br>3개월/6개월 일괄 결제 상품은 주문 취소 시 ‘환불’이 아닌 해당 월 구독 이용 횟수가 이월됩니다.</p>
+                    </li>
+                    <li>
+                        <p class="listTit">반품</p>
+                        <p class="listDesc">제품이 이미 발송 완료된 경우, 반품은 불가능하며 제품에 하자가 있는 경우에만 고객 상담실로 연락 부탁드립니다.</p>
+                    </li>
+                    <li>
+                        <p class="listTit">구독 취소(구독 해지)</p>
+                        <p class="listDesc">구독 취소를 원할 경우 ‘해지 하기’로 진행 가능하며 해당월 다다일상을 수령하신 경우 구매확정 후 해지 가능합니다. <br>3개월/6개월 묶음 결제 상품의 경우 하기와 같이 환불 금액이 책정됩니다. <br>* 3개월 구독 상품 해지 : 총 결제 금액 - (24,900원*지금까지 구독한 개월 수) <br>* 6개월 구독 상품 해지 : 총 결제 금액 - (24,900원*지금까지 구독한 개월 수) - 다이어리 비용 5,000원
+                        </p>
+                    </li>
+                    <li>
+                        <p class="listTit">자동 결제 승인 실패로 인한 해지 안내</p>
+                        <p class="listDesc">구독 중, 자동 결제 실패 시 2회까지 고객에게 안내되며 이후에도 결제 승인이 이루어지지 않으면 구독이 해지됩니다.</p>
+                    </li>
+                    <li>
+                        <p class="listTit">각종 변경 및 취소, 해지 경로 안내</p>
+                        <p class="listDesc">* PC 버전 : 마이 페이지 > 다다일상 관리 > 변경할 구독 서비스 클릭 > 구독 관리 페이지 내 관련 버튼 클릭 <br>* 모바일 버전 : 우측상단 바 메뉴 > 변경할 구독 서비스 클릭 > 구독 관리 페이지 내 관련 버튼 클릭</p>
+                    </li>
+                    <li>
+                        <p class="listTit">자동 결제 승인 실패로 인한 해지 안내</p>
+                        <p class="listDesc">구독 중, 자동 결제 실패 시 2회까지 고객에게 안내되며 이후에도 결제 승인이 이루어지지 않으면 구독이 해지됩니다.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //dadaFaq -->
+    <footer>
+        <div class="ftInner">
+            <div class="ftUser clear">
+                <a href="#" id="btnSignIn">로그인</a>
+                <a href="#" id="btnContact">고객센터</a>
+                <ul class="lang">
+                    <li>
+                        <a href="#" id="btnLang" class="btnArrow"><span>한국어</span></a>
+                        <ul class="dropBox">
+                            <li><a href="#">한국어</a></li>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">中文</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- //ftUser -->
+        </div>
+        <div class="ftInner w0">
+            <div class="ftInfo">
+                <div class="btnArea"><a href="#" id="btnFtInfo" class="btnArrow"><span>오설록 사업자 정보확인</span></a></div>
+                <div class="dropBox">
+                    <p class="adress">
+                        <span>㈜ 오설록</span>
+                        <span>대표이사:서혁제</span>
+                        <span>주소:서울특별시 용산구 한강대로 100, 14층(한강로2가)</span>
+                        <span>사업자등록번호: 390-87-01499</span>
+                        <span>통신판매업신고번호:2019-서울용산-1173호</span>
+                        <span>호스팅제공자: ㈜오설록</span>
+                    </p>
+                    <p>
+                        <span>(주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 통신판매중개자 이며 통신판매의 당사자가 아닙니다.</span>
+                        <span>따라서 입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.</span>
+                    </p>
+                    <p>
+                        <span class="title">NHN KCP 구매안전(에스크로)서비스</span>
+                        <span class="desc"> 고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에 가입한 NHN KCP의 구매안전서비스를 이용하실 수 있습니다.</span>
+                    </p>
+                </div>
+                <!-- //dropBox -->
+            </div>
+            <!-- //ftInfo -->
+        </div>
+        <div class="ftInner ftBtm">
+            <div class="infoLink">
+                <a href="#">회사소개</a>
+                <a href="#">서비스 이용약관</a>
+                <a href="#"><b>개인정보 처리방침</b></a><br>
+                <a href="#">영상정보 처리방침</a>
+                <a href="#">뷰티포인트</a>
+                <a href="#">임직원할인</a>
+                <a href="#">사이트맵</a>
+                <a href="#">전자공고</a>
+                </div>
+            <div class="infoArea">
+                <div class="contact">
+                    <p class="title">고객상담센터&middot;주문/배송문의</p>
+                    <a href="#" class="mail">help@osulloc.com</a>
+                    <p class="call">080-805-5555</p>
+                    <p class="onTime">평일 09:30 - 17:00 (점심 11:30 - 13:00)</p>
+                </div>
+                <div class="order">
+                    <p class="title">특판, 대량구매 문의</p>
+                    <a href="#" class="mail">mall@osulloc.com</a>
+                    <p class="kakao">카카오톡ID : osullocmall</p>
+                    <p class="onTime">평일 09:30 - 17:00 (점심 11:30 - 13:00)</p>
+                </div>
+            </div>
+            <div class="snsWrap">
+                <a href="https://www.tiktok.com/@osulloc_official" class="sns_t"><img src="img/icon/ic_tiktok.png" alt="오설록 틱톡"></a>
+                <a href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA" class="sns_y"><img src="img/icon/ic_youtube.png" alt="오설록 유튜브"></a>
+                <a href="https://www.instagram.com/osulloc_official/" class="sns_i"><img src="img/icon/ic_insta.png" alt="오설록 인스타그램"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+    <a href="#" id="goToTop"><img src="img/icon/btn_goTop.png" alt="맨 위로 이동하기"></a>
+
+    <!-- js -->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/dada_mo.js"></script>
+    <script>
+        let delay = 200;
+        let timer = null;
+
+        window.addEventListener('resize', function() {
+            clearTimeout(timer);
+            timer = setTimeout(function() {
+                if (window.innerWidth >= 760) {
+                    window.location.href = "dada.html"
+                }
+            },delay)
+        })
+    </script>
+</body>
+</html>

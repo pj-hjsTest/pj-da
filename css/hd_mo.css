@@ -1,0 +1,121 @@
+@charset "utf-8";
+@import url('font.css');
+
+header {
+    top: 0; left:0; right:0;
+    position: fixed;
+    height: 48px;
+    z-index: 30;
+    background: #fff;
+}
+header .inner {display: flex; justify-content: space-between; height: 48px;}
+header .leftArea {float: left; width:60px;}
+header .leftArea .logo a {display: block; width: 100%; box-sizing: border-box;}
+header .leftArea .logo img {max-width: 100%;}
+/* header-rightArea */
+header .utilArea {display: flex; flex-direction: row; align-items: center; gap: 12px}
+header .utilArea #btnSearch {
+    width: 40px; height: 40px;
+    background: url(../img/icon/Icon_search.svg) no-repeat center/20px;
+}
+header .utilArea #btnCart{
+    position: relative;
+    width: 24px; height: 24px;
+    background: url(../img/icon/icon_cart_black.png) no-repeat center/cover;
+}
+header .utilArea #btnCart .num {position: absolute; top:-4px; right: -8px; width: 16px; aspect-ratio:1/1; line-height: 16px; background: #333; color:#fff; font-size: 1.4rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; }
+header .utilArea #btnMenu {width: 24px; height: 24px; background: url(../img/icon/icon_moNav_black.png)no-repeat center/cover;}
+
+/* sideMenu - right/opacity */
+#sideMenu {position: fixed; right: -150%; width: 100vw; height: 100vh; background: #fff; z-index: 50; overflow: auto;transition: all 0.4s ease-in-out;}
+#sideMenu.on {right: 0; }
+#sideMenu .inner {padding: 15px 20px 0;}
+/* sideMenu - menuTop */
+#sideMenu .menuTop {margin-bottom: 22px; position: relative;}
+#sideMenu .menuTop #btnLogIn {float: left; font-size: 2rem;font-weight: 600; line-height: 1.5em;}
+#sideMenu .menuTop #btnLogIn::after {
+    content: '';
+    display: inline-block;
+    width: 8px; height: 14px;
+    margin-left: 12px;
+    background: url(../img/icon/icon_arrow_r.png) no-repeat center/cover;
+}
+#sideMenu .menuTop #btnClose {position: absolute; top:0; right: 0; width: 16px; height: 16px;}
+#sideMenu .menuTop #btnClose img {max-width: 100%;}
+/* sideMenu - signBox */
+.signBox {width: 100%; padding: 26px 0 22px; background: #f6f6f6; border-radius: 8px; text-align: center; color:#666; margin-bottom: 12px;}
+.signBox .text {font-size: 1.5rem; margin-bottom: 1em; }
+.signBox .text b {color:#6C801A; font-weight: 700;}
+.signBox #btnJoin {width: 80px; height: 32px; line-height: 32px; border: 1px solid #ddd; border-radius: 4px; background: none; font-size: 1.4rem;}
+/* sideMenu - gnb */
+.gnbInner {padding: 0;}
+.gnb > ul > li > div {line-height: 1; font-weight: 600; padding: 18px 0; display: block; position: relative; font-size: 1.6rem; border-bottom: 1px solid #ddd; margin: 0 20px;}
+.gnb > ul > li:last-child div {border-bottom: none;}
+.gnb > ul > li > div > a::after {
+    content: '';
+    position: absolute;
+    top: 50%; right: 0;
+    width: 12px; height: 6px;
+    background: url(../img/icon/icon_mo_nav.png)no-repeat center/cover;
+}
+.gnb > ul > li:nth-child(2) > a::after {display: none;}
+/* gnb 내 화살표 on클래스로 처리*/ 
+.gnb > ul > li.on > a {color: #6C801A}
+.gnb > ul > li.on > a::after {
+    transform: rotate(180deg);
+}
+.gnb  ul .depth2 {background: #f6f6f6; padding: 20px 0 15px 32px; display: none;}
+.gnb  ul .depth2 li a {display: block; padding-bottom: 20px; font-size: 1.5rem; color: #666; font-weight: 600;}
+/* sideMenu - 하단영역 */
+.MenuBanner {width: 100%; margin-bottom: 30px;}
+.MenuBanner img {max-width: 100%; height: auto;}
+.menuBtm {display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 60px;}
+.menuBtm .linkWrap {flex-basis: 49%; background: #f6f6f6; border-radius: 8px; height: 44px; margin-top: 6px;}
+.menuBtm .linkWrap a {display: block; font-size: 1.4rem; line-height: 44px; box-sizing: border-box; padding-left: 16px; position: relative;}
+.menuBtm .linkWrap a::after {
+    content: '';
+    position: absolute;
+    top: 50%; right: 16px;
+    transform: translateY(-50%);
+    width: 7px; height: 12px;
+    background: url(../img/icon/icon_mo_link.png) no-repeat center/cover;
+}
+/* searchArea */
+/* searchArea  - searchTopArea */
+#searchArea {position: fixed; top:0; left: 0; width: 100vw; height: 100vh; z-index: 100; background: #fff; overflow: hidden; display: none;}
+#searchArea.active {display: block;}
+#searchArea .inner {padding: 20px 20px 0;}
+#searchArea .inner.w0 {padding: 20px; background: #ececec;}
+#searchArea .searchTopArea {margin-bottom: 20px;}
+#searchArea .searchTopArea .searchTab {float: left; width: calc(100% - 40px); position: relative;}
+#searchArea .searchTopArea .searchTab input {padding: 2px 50px 0 20px; height: 40px; border-radius: 20px; width: 100%; box-sizing: border-box; font-family: inherit; font-weight: 600; font-size: 1.4rem; background: #ececec;}
+#searchArea .searchTopArea .searchTab input:focus {outline: none;}
+#searchArea .searchTopArea .searchTab input::placeholder {color: #999; vertical-align: middle;}
+#searchArea .searchTopArea .searchTab .btnSearch {position: absolute; right:0; width: 40px; height: 40px; background: url(../img/icon/Icon_search.svg) no-repeat left center/20px;}
+#btnSearchClose {width: 40px; height: 40px; background: none;}
+/* searchArea - chartArea */
+#searchArea .chartArea {width: 100%; background: #fff; box-sizing: border-box; border-radius: 10px;}
+#searchArea .chartArea .chartTab {font-size: 1.4rem; display: flex; padding: 0 20px; }
+#searchArea .chartArea .chartTab li {width: 50%; border-bottom: 2px solid #ececec; height: 50px; line-height: 50px; text-align: center; box-sizing: border-box;}
+#searchArea .chartArea .chartTab li.active { color: #668904; border-color: #668904;}
+/* searchArea -chaerCont 공통 */
+#searchArea #chartList {padding: 20px 20px 0;}
+#searchArea #chartList li {display: flex; justify-content: space-between; align-items: center; height: 20px;}
+#searchArea .resultPopualr li:after {content: ''; display: block; width: 30px; height: 20px; background: url(../img/icon/Icon_rankUp.svg) no-repeat center/11px;}
+#searchArea #chartList li+li {margin-top: 20px;}
+#searchArea #chartList li a {display: block; height: 20px; box-sizing: border-box;}
+#searchArea #chartList li b {display: inline-block; width: 20px; height: 20px; color: #668904; font-size: 1.8rem; line-height: 1; font-weight: 700; margin-right: 20px; text-align: center;}
+#searchArea #chartList li span {font-size: 1.8rem; line-height: 1;}
+#searchArea .chartCont {display: none;}
+#searchArea .chartCont.active {display: block;}
+/* resultPopualr */
+.chartCont.popualr .date {margin-top: 20px; text-align: right; height: 45px; border-top: 1px solid #ccc; line-height: 45px; padding: 0 20px; font-size: 1.4rem; color: #727272}
+/* resultHistory */
+.resultHistory li {display: flex; height: 20px; align-items: center;}
+.resultHistory li a span {line-height: 20px; height: 20px; display: block;}
+.resultHistory li .rightArea {display: flex; justify-content: space-between; gap: 2px}
+.resultHistory li .rightArea .date {color: #758246; font-size: 1.5rem; height: 20px;}
+.resultHistory li .rightArea .btnRemove {width: 20px; height: 20px; background: none;}
+.btnWrap {margin-top: 20px;height: 45px; border-top: 1px solid #ccc; line-height: 45px; padding: 0 20px; font-size: 1.4rem; color: #727272; text-align: right;}
+.removeHistoryAll {background: none; font-size: 1.5rem; color: #111; font-weight: 600; border-bottom: 2px solid #111; padding: 0 0 2px;}
+.removeHistoryAll img {display: inline-block; margin-right: 4px; width: 14px; padding-bottom: 3px;}

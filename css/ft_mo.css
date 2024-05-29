@@ -1,0 +1,63 @@
+@charset "utf-8";
+@import url('font.css');
+
+/* footer */
+footer .ftInner.w0 {padding: 0;}
+footer {color: #7b7b7b; font-size: 1.4rem; font-family: 'Noto Sans KR'}
+footer .ftInner {padding: 0 15px;}
+/* footer - ftUser */
+footer .ftUser {height: 30px; margin: 9px 0; box-sizing: border-box;}
+footer .ftUser > a {display: inline-block; width: 80px; height: 30px;  box-sizing: border-box; border: 1px solid #ddd; line-height: 28px; text-align: center;}
+footer .ftUser #btnContact {margin-left: 6px;}
+footer .ftUser .lang {float: right; position: relative; line-height: 30px;}
+footer .ftUser #btnLang {display: inline-block; width: 70px; height: 30px; text-align: right;}
+footer .btnArrow span::after {
+    content: '';
+    display: inline-block;
+    width: 11px; height: 7px;
+    margin: 0 0 2px 4px;
+    background: url(../img/icon/m_lang.jpg) no-repeat center/cover;
+}
+footer .btnArrow.on span::after {
+    background-image: url(../img/icon/m_lang_on.png);
+}
+footer .ftUser .lang .dropBox {
+    position: absolute; top: 30px; right: -10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    z-index: 10;
+}
+footer .ftUser .lang .dropBox li a {display: block; padding: 0 12px; line-height: 2.5em; color: #636363;}
+footer .ftUser .lang .dropBox li a:hover {background: #f6f6f6; color: #000;}
+/* footer - ftInfo */
+footer .ftInfo .btnArea {padding: 0 15px;}
+footer .ftInfo .btnArea .btnArrow {display:block; height: 44px; font-size: 1.5rem; text-align: center; line-height: 44px; border-bottom: 1px solid #f3f3f3; box-sizing: border-box; }
+footer .ftInfo .dropBox {background: #fafafa; padding: 15px;}
+footer .ftInfo .dropBox p {margin-bottom: 20px;}
+footer .ftInfo .dropBox span {display: block; font-size: 1.2rem; line-height: 1.6;}
+
+/* footer -infoLink */
+footer .infoLink {margin: 15px 0 30px; text-align: center;}
+footer .infoLink a {padding: 5px 0; font-size: 1.2rem; letter-spacing: -1.3px;}
+footer .infoLink a+a::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #ddd;
+    margin: 0 8px;
+}
+/* footer - infoArea */
+footer .infoArea {display: flex; margin-bottom: 15px;}
+footer .infoArea div {flex-basis: 50%; padding-left: 15px;}
+footer .infoArea div .mail {font-size: 1.5rem; color: #595959; font-weight: 500;}
+footer .infoArea div .onTime {margin-top: 2px;}
+footer .infoArea div p {font-size: 1.1rem; letter-spacing: -0.8px; font-weight: 500;}
+footer .infoArea .contact .call {font-size: 2.2rem; color: #595959}
+footer .infoArea .order {border-left: 1px solid #f6f6f6;}
+/* footer - snsWrap */
+footer .snsWrap {padding-left: 15px;}
+footer .snsWrap a {width: 34px; height: 34px; display: inline-block; margin-right: 8px;}
+/* goToTop */
+#goToTop {position: fixed; bottom: 40px; /* right: 20px; */  right: -35px; width: 34px; height: 34px; transition: all 0.3s ease; opacity: 0.8;}
+#goToTop.on {right: 20px; opacity: 1;}

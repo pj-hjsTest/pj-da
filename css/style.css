@@ -1,0 +1,190 @@
+@charset "utf-8";
+@import url('font.css');
+
+/* 공통요소 */
+html {font-size: 0.625rem;}
+body {font-size: 1.6rem; font-family: 'AritaDotum', sans-serif; letter-spacing: -0.54px; color: #333}
+.dropBox {position: absolute; top: 60px; text-align: right; background: #fff; display: none;}
+.dropBox li:last-child {padding-bottom: 25px;}
+.dropBox li a {display: block; color:#555; font-size: 15px; font-weight: 400; padding: 20px 20px 8px;}
+section+section {margin-top: 48px;}
+section .inner {max-width: 1200px; margin: 0 auto; padding:0 20px}
+section h3{margin-top: 48px; font-size: 2.8rem; color: #333; font-weight: 600;}
+section .text {color: #999; margin-bottom: 24px;}
+
+/* mainVisual */
+#mainVisualArea {margin-top: 0;}
+#mainVisualArea .swiper .swiper-wrapper .swiper-slide {
+    max-width: 100%; max-height: 625px;
+    overflow: hidden;
+    position: relative;
+}
+.swiper .swiper-wrapper .swiper-slide img {max-width: 100%;}
+.swiper-button-prev:before {
+    content: '';
+    display: block;
+    background: url(../img/icon/main_prev_btn.png) no-repeat center/cover;
+    width: 60px; height: 60px;
+    position: absolute;
+    left: 30px; top: -40px
+}
+.swiper-button-next:before {
+    content: '';
+    display: block;
+    background: url(../img/icon/main_next_btn.png) no-repeat center/cover;
+    width: 60px; height: 60px;
+    position: absolute;
+    right: 30px; top: -40px;
+}
+.swiper-button-prev:hover::before {background-image: url(../img/icon/main_prev_btn_hover_1.png);}
+.swiper-button-next:hover::before {background-image: url(../img/icon/main_next_btn_hover_1.png);}
+.swiper-button-prev:after, .swiper-button-next:after { display: none;}
+#mainVisualArea .swiper-control {position: absolute; bottom:65px; display: flex; flex-direction:row; width: 400px; left: 40%;}
+#mainVisualArea .swiper-pagination-bullet {width: 64px; height: 2px; margin: 0; background-color: #3333331a; opacity: 1;}
+#mainVisualArea  .swiper-pagination-bullet-active {background-color: #333;}
+#mainVisualArea .swiper-button-pause a {width: 8px; height: 12px; z-index: 20; float: left; position: absolute; right:30px; bottom: 10px; display: block;}
+#mainVisualArea .swiper-button-pause img {max-width: 100%;}
+
+/* mainVisual -textArea */
+.swiper-slide .textAlign {
+    position: absolute;
+    top: 0; left:18%;
+    padding: 0 3.75em 0;
+    width: 1320px;
+    height: 100%;
+}
+.swiper-slide .textArea {display: flex; flex-direction: column; height: 100%; justify-content: center; align-items: start; padding-top: 10px;}
+.swiper-slide .textArea .banTit {margin-top:10px;}
+.swiper-slide .textArea .banTit span{display: block; font-size: 3.6rem; color: #333; font-weight: 600; line-height: 1.33em;}
+.swiper-slide .textArea .onePoint {margin-top: 10px;}
+.swiper-slide .textArea .onePoint span {display: block; font-weight: 400; line-height: 1.5em; color:#333}
+.swiper-slide .textArea .date {margin-top: 16px; font-weight: 700; color:#333; font-size: 1.6rem;}
+#showEvent {font-size: 1.3rem; height: 32px; width:110px; border-radius: 4px; border: 1px solid #555555; color:#333333; background: transparent; position: absolute; bottom: 40px; transition: all 0.2s; letter-spacing: -1px; vertical-align: bottom;}
+#showEvent:hover {background: #666; color:#fff}
+
+/* main_sec */
+#main_sec .noticeArea {position: relative; padding: 14px 16px; display: flex; align-items: center; background: #f6f6f6; border-radius: 4px; height: 20px; overflow: hidden;}
+.noticeArea .noticeTitle {font-size: 1.5rem; color:#999; line-height: 1; margin-right: 12px;}
+.noticeMore {position: absolute; top:50%; right:22px; width:7px; height: 12px; transform: translateY(-50%); background: url(../img/icon/notice_more_btn.png) no-repeat center/cover;}
+.noticeArea ul li.prev {top: -20px;}
+.noticeArea ul li.on {top: 15px;}
+.noticeArea ul li, .noticeArea ul li.next {position: absolute; top: 50px; height: 20px;transition: 0.8s ease; }
+.noticeArea ul li.next {transition: none;}
+.noticeArea ul li a {color:#666; font-size: 1.5rem; line-height: 1;}
+
+/* main_sec - todayRecom */
+section .inner.w2 {max-width: 1280px; padding: 0 40px; box-sizing: border-box; position: relative;}
+.todayRecom .recomTop{display: flex; align-items: end;}
+.todayRecom .recomTop h3 {height: 36px; line-height: 36px;}
+.todayRecom .recomTop .tabItemList {margin-left: 30px; display: flex; /* align-items:end; */}
+.todayRecom .recomTop .tabItemList li {height: 36px; line-height: 36px; padding: 0 16px; font-size: 1.5rem; color:#999; background: #f6f6f6; text-align: center; border-radius: 150px; cursor: pointer;}
+.todayRecom .recomTop .tabItemList li+li {margin-left: 8px;}
+.todayRecom .recomTop .tabItemList .tabItem.on {background: #6C801A; color:#fff; font-weight: 600;}
+
+/* main_sec - todayRecom - tabList*/
+.tabList {margin-top: 30px;}
+#tabCont {display: none;}
+#tabCont.on {display: block;}
+#tabCont .swiper {margin-bottom: 12px; height: 360px}
+#tabCont figure {position: relative;}
+#cart {width: 36px; height: 36px; background: url(../img/icon/icon_prd_cart.png) no-repeat top; position: absolute; bottom:10px; right:15px; opacity: 0;  transition: all;}
+/* #tabCont figure:hover #cart{opacity: 1;} */
+#cart:hover {background-position: 0 -36px;}
+#tabCont .pdInfo .pdTitle {color: #333333; font-size: 1.7rem; display: block;  margin-bottom: 16px;}
+#tabCont .pdInfo span {display: block;}
+#tabCont .pdInfo .price {font-size: 2rem; color:#333333; font-weight: 700; margin-top: 6px;}
+#tabCont .pdInfo .offSale {text-decoration: line-through; color: #999; font-size: 1.5rem; font-weight: 300; line-height: 1.5rem;}
+#tabCont .pdInfo .sale {font-size: 2rem; color:#6C801A; font-weight: 700; margin-left: 5px;} 
+#tabCont .swiper .pdInfo.onSale .price,  #tabCont .swiper-slide .pdInfo.onSale .sale {display: inline-block;}
+
+/* 더보기 버튼 공통 */
+.btnP {text-align: center; margin-top: 48px;}
+.btnP .btnMore {display: inline-block; height: 48px; line-height: 48px; padding: 0 60px; border: 1px solid #ddd; color: #666; background: #fff; border-radius: 4px; font-size: 1.5rem;}
+.btnP .btnMore:after {
+    content: '';
+    display: inline-block;
+    width: 5px; height: 9px;
+    margin-left: 10px;
+    background: url(../img/icon/icon_main_btn.png) no-repeat center/cover;
+}
+.tabList .swiper-button-prev:before {width: 40px; height: 40px; top:-50px; left:-15px;}
+.tabList .swiper-button-next:before {width: 40px; height: 40px; top:-50px; right:-15px;}
+
+/* main-hotdeal */
+#main_hotdeal .inner {max-width: 1200px; padding: 20px 20px; margin: 85px auto;}
+#main_hotdeal figure {max-width: 100%; height: 275px; overflow: hidden; background: url(../img/hotDeal.jpg) no-repeat center/cover;}
+figure .hotDeal {float: right; padding:50px 56px 30px 60px; width: 600px; box-sizing: border-box; height: 100%;}
+.hotDeal .hotDealDesc {display: flex; justify-content: space-between; align-items: center;}
+.hotDeal .hotDealDesc h3, .hotDeal .hotDealDesc .timer {margin: 0; font-size: 2.8rem; color:#333; font-weight: 600;}
+.hotDeal .hotDealDesc .timer {color: #6E6672; font-weight: 500;}
+.hotDeal .hotDealDesc .timer::before {
+    content: '';
+    display: inline-block;
+    width: 22px; height: 22px;
+    background: url(../img/icon/todayTimer.png) no-repeat center/cover;
+    margin-right: 6px;
+}
+.hotDeal h4 {margin: 50px 0 5px; font-size: 2.6rem; color: #333; font-weight: 600;}
+.hotDealPrice {display: flex; align-items: center; gap:15px}
+.hotDealPrice span {font-size: 3rem; color:#333; font-weight: 500;}
+.hotDealPrice span:first-child {font-size: 1.8rem; color:#847A8A; text-decoration: line-through;}
+.hotDealPrice span:last-child {font-size: 2.8rem; font-weight: 600; color: #fff; background: #FD5C5C; width: 74px; aspect-ratio: 1/1; border-radius: 50%; display: flex; justify-content: center; align-items: center;}
+
+/* dadaBanner */
+#dadaBanner {background: #f6f6f6;}
+#dadaBanner .inner {padding: 44px 20px 80px;}
+#dadaBanner h3 { margin: 0 0 14px;}
+.dadaInfo {display: flex; gap: 20px; justify-content: space-between;}
+.dadaInfo li {width: calc(100%/2 - 20px);}
+.dadaInfo li+li {display: flex; gap: 20px; flex-direction: column; height: calc(100%/2 - 20px);}
+.dadaInfo li img {max-width: 100%;}
+
+/* dadaEvent */
+#dadaEvent {margin-top: 80px;}
+#dadaEvent .inner {display: flex; gap: 20px;}
+#dadaEvent .inner div {display: block; width: calc(100%/2); overflow: hidden; position: relative;}
+#dadaEvent .inner img {max-width: 100%; z-index: -1;}
+#dadaEvent .inner .eventDesc {position: absolute; top:0; left:46px; display: flex; height: 100%; justify-content: center;flex-direction: column; gap: 8px;}
+#dadaEvent .inner .eventDesc .title {font-size: 2.4rem; color: #333;  font-weight: 600;}
+#dadaEvent .inner .eventDesc .date {font-size: 1.4rem; letter-spacing: normal; line-height: 21px;}
+#dadaEvent .inner .eventDesc .date span:last-child {margin-right: 8px; padding:2px 9px; background: #87A57C; display: inline-block; line-height: 1; font-weight: 600; color:#fff; border-radius: 2px;}
+#dadaEvent .event02 .eventDesc p:first-child {font-size: 1.8rem; color: #cfcac2}
+#dadaEvent .event02 .eventDesc .title {color: #fff; font-weight: 600;}
+
+/* aboutDada */
+#aboutDada {margin-top: 80px;}
+#aboutDada h3 {margin: 0 0 14px;}
+#aboutDada figure {max-width: 100%; overflow: hidden; position: relative;}
+#aboutDada figure img {max-width: 100%;}
+#aboutDada figure .textArea {position: absolute; top: 50%; left:80px; transform: translateY(-50%);}
+#aboutDada figure .textArea span {display: block; font-family: 'Gowun Dodum', sans-serif; color: #fff; margin-bottom: 10px; font-size: 1.6rem;}
+#aboutDada figure .textArea span+span {font-weight: 400; font-size: 3rem; margin-bottom: 0;}
+
+/* store */
+#store {margin-top: 80px;}
+#store h3 {line-height: 48px;}
+#store .inner {position: relative;}
+#store .text {margin: 5px 0 20px;}
+#store .storeList {margin-bottom: 40px; max-width: 1120px;}
+#store .storeList .swiper-slide {transform: scale(0.9); transition: all 0.5s; position: relative;}
+#store .storeList .swiper-slide.on {transform: scale(1);}
+#store .storeList .textArea {width: 100%;padding:40px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: start; position: absolute; top:0; left:0}
+#store .storeList .textArea .title {font-family: 'Gowun Dodum', sans-serif; color:#fff; font-size: 3rem; line-height: 39px;}
+#store .storeList .textArea  .desc {color: #fff; font-size: 1.4rem; line-height: 21px; margin-top: 10px; letter-spacing: normal;}
+/* store-스와이퍼 커스텀 */
+#store .swiper-button-next:before {right:-25px; top: -40px;}
+#store .swiper-button-prev:before {left:-25px; top: -40px;}
+#store .swiper-pagination {bottom: 36px}
+#store .swiper-pagination-bullet {width: 0.25em; height: 0.25em; background-color: #fff; transform: scaleX(1.1); margin: 0 5px;}
+#store .swiper-pagination-bullet:first-child, #store .swiper-pagination-bullet:nth-child(3n) {transform: scale(1);}
+
+/* promotion */
+#promotion {margin: 80px 0 60px;}
+#promotion h3 {line-height: 48px;}
+#promotion .text {margin: 5px 0 20px;}
+#aboutDada figure {max-width: 100%; overflow: hidden;}
+#aboutDada figure img {max-width: 100%;}
+
+/* goToTop */
+#goToTop {position: fixed; bottom: 40px; /* right: 20px; */  right: -50px; width: 32px; height: 32px; transition: all 0.3s ease-in-out; opacity: 0.8;}
+#goToTop.on {right: 20px; opacity: 1;}

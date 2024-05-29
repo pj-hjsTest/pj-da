@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브랜드 | 오설록</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/brand.css">
+    <link rel="stylesheet" href="css/header02.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header>
+        <!-- active.class-->
+        <div class="hdInner clear">
+            <div class="leftArea clear">
+                <h1 class="logo"><a href="index.html"><img src="img/icon/logo_black.png" alt=""><span class="blind">오설록</span></a></h1>
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="#">제품</a>
+                            <div class="sub">
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="#" class="on">베스트</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">위클리 베스트</a></li>
+                                            <li><a href="#">베스트</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">티 제품</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">티 세트</a></li>
+                                            <li><a href="#">명차</a></li>
+                                            <li><a href="#">녹차/말차</a></li>
+                                            <li><a href="#">발효차/홍차</a></li>
+                                            <li><a href="#">블렌디드티</a></li>
+                                            <li><a href="#">허브티</a></li>
+                                            <li><a href="#">밀크티/아이스티</a></li>
+                                            <li><a href="#">콤부차</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">티푸드</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">과자/초콜릿</a></li>
+                                            <li><a href="#">베이커리</a></li>
+                                            <li><a href="#">아이스크림</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">티웨어</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">용도별</a></li>
+                                            <li><a href="#">브랜드별</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">라이프스타일</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">스킨케어</a></li>
+                                            <li><a href="#">대량구매</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><div class="imgBox"><a href="#"><img src="img/gnbImg01.png" alt=""></a></div></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- //제품 -->
+                        <li class="noDepth"><a href="#">선물추천</a></li>
+                        <li>
+                            <a href="dada.html">다다일상</a>
+                            <div class="sub">
+                                <ul class="depth2 list3">
+                                    <li>
+                                        <a href="#">다다일상 구독</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">다다일상</a></li>
+                                            <li><a href="#">다다일상 라이트</a></li>
+                                            <li><a href="#">정기배송</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">다다일상 챌린지</a></li>
+                                    <li><a href="#">다다일상 기록</a></li>
+                                    <li class="clear"><div class="imgBox"><a href="#"><img src="img/gnbImg01.png" alt=""></a></div></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- //다다일상 -->
+                        <li>
+                            <a href="brand.html">브랜드</a>
+                            <div class="sub">
+                                <ul class="depth2 list4">
+                                    <li><a href="#">오설록 스토리</a></li>
+                                    <li><a href="#">제주 티뮤지엄</a></li>
+                                    <li><a href="#">매장 소개 및 예약</a></li>
+                                    <li><div class="imgBox"><a href="#"><img src="img/gnbImg01.png" alt=""></a></div></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- //브랜드 -->
+                    </ul>
+                </nav>
+                <!-- //gnb -->
+            </div>
+            <!-- //leftArea -->
+            <div class="rightArea clear">
+                <div class="utilArea clear">
+                    <div class="searchArea">
+                        <form class="search">
+                            <label for="searchForm"></label>
+                            <input type="text" id="searchForm" placeholder="검색어를 입력해주세요">
+                            <a href="#" id="btnSearch"></a>
+                        </form>
+                    </div>
+                    <a href="#" id="btnCart"><span class="num">0</span></a>
+                    <ul class="menuArea clear">
+                        <li>
+                            <a href="#" id="btnMenu"></a>
+                            <div class="positonCont">
+                                <ul class="dropBox">
+                                    <li><a href="#">고객센터</a></li>
+                                    <li><a href="#">매장찾기</a></li>
+                                    <li><a href="#">주문배송조회</a></li>
+                                    <li><a href="#">예약조회</a></li>
+                                    <li><a href="#">뷰티포인트 추후적립</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- //menuArea -->
+                </div>
+                <!-- //utilArea -->
+                <div class="user">
+                    <ul class="logIn">
+                        <li>
+                            <a href="#" id="btnLogIn">로그인</a>
+                            <ul class="dropBox">
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="lang">
+                        <li>
+                            <a href="#" id="btnLang">KOREAN<span></span></a>
+                            <ul class="dropBox">
+                                <li><a href="#">한국어</a></li>
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">中文</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //user -->
+            </div>
+        </div>
+        <!-- //hdInner -->
+    </header>
+    <div id="hdBg"></div>
+    <div id="bgBlack"></div>
+    <!-- 검색창  -->
+    <section id="searchMenu">
+        <div class="searchInner">
+            <a href="#" id="searchClose"><img src="img/icon/btn_close_search.png" alt=""></a>
+            <div class="chartArea">
+                <div class="chartList popular">
+                    <p class="title">인기 검색어<span class="date">23.08.10 기준</span></p>
+                    <ul class="rank">
+                        <li><a href="#"><p><b>1</b><span>세작</span></p>
+                            <span class="rankStatus">NEW</span></a></li>
+                        <li><a href="#"><p><b>2</b><span>웨딩</span></p><span class="rankStatus"><img src="img/icon/Icon_rankUp.svg" alt=""></span></a></li>
+                        <li><a href="#"><p><b>3</b><span>우롱</span></p><span class="rankStatus">NEW</span></a></li>
+                        <li><a href="#"><p><b>4</b><span>티</span></p><span class="rankStatus">NEW</span></a></li>
+                        <li><a href="#"><p><b>5</b><span>동백꽃</span></p><span class="rankStatus"><img src="img/icon/Icon_rankDown.svg" alt=""></span></a></li>
+                        <li><a href="#"><p><b>6</b><span>달빛 걷기</span></p><span class="rankStatus"><img src="img/icon/Icon_rankDown.svg" alt=""></span></a></li>
+                        <li><a href="#"><p><b>7</b><span>우롱차</span></p><span class="rankStatus"><img src="img/icon/Icon_rankDown.svg" alt=""></span></a></li>
+                        <li><a href="#"><p><b>8</b><span>3입</span></p><span class="rankStatus"><img src="img/icon/Icon_rankDown.svg" alt=""></span></a></li>
+                        <li><a href="#"><p><b>9</b><span>케이크</span></p><span class="rankStatus"><img src="img/icon/Icon_rankDown.svg" alt=""></span></a></li>
+                        <li><a href="#"><p><b>10</b><span>스프레드</span></p><span class="rankStatus"><img src="img/icon/Icon_rankDown.svg" alt=""></span></a></li>
+                    </ul>
+                </div>
+                <!-- //popular -->
+                <div class="chartList searchHistory">
+                    <p class="title">최근 검색어<span class="date">23.08.10 기준</span></p>
+                    <ul class="history">
+                    </ul>
+                    <button class="removeHistoryAll"><img src="img/icon/Icon_trash.svg" alt="">검색 기록 삭제</button>
+                </div>
+                <!-- //searchHistory -->
+                <div class="searchBanner"></div>
+                </div>
+                <!-- //chartBanner-->
+            </div>
+            <!-- //chartArea -->
+        </div>
+    </section>
+    <!-- //searchMenu -->
+    <section id="mainVisualArea">
+        <div class="videoArea">
+            <div class="videoArea">
+                <video src="img/brand/mainFilm.mp4" type="video/mp4"></video>
+            </div>
+            <div class="videoTitleArea">
+                <h1>TEA FROM JEJU</h1>
+                <p class="desc">대한민국이 가진 천혜의 자연 유산 제주,<br>화산섬 제주가 가진 경이로운 생명력으로<br>오설록의 차는 탄생합니다.</p>
+            </div>
+        </div>
+    </section>
+    <!-- //mainVisualArea -->
+    <section id="brandStory">
+        <div class="circle"></div>
+        <div class="inner w0">
+            <div class="swiper brandStoryWrap">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide prev">
+                        <div class="slideContent temp">
+                            <div class="titleArea">
+                                <h3>아열대 기후의 화산섬</h3>
+                                <p class="subTitle">연평균 기온 16도씨</p>
+                            </div>
+                            <figure><img src="img/brand/intro_element_5.png" alt="아열대 기후의 화산섬"></figure>
+                            <p class="caption">
+                                제주 차밭은 화산섬이 만든 완만한 지형의 고저로 인해 식물 에너지의 근원인 태양을 한껏 끌어안습니다. 사계절 내내 쏟아지는 따뜻한 빛은 연 평균 기온을 14~16℃로 유지해 차가 건강하게 자랄 수 있는 온도를 제공합니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide now">
+                        <div class="slideContent mist">
+                            <div class="titleArea">
+                                <h3>한라산이 빚은 안개</h3>
+                                <p class="subTitle">연평균 해무 발생일수 25일</p>
+                            </div>
+                            <figure><img src="img/brand/intro_element_1.png" alt="한라산이 빚은 안개"></figure>
+                            <p class="caption">
+                                해발 1,950mm, 화산섬에 우뚝 솟은 한라산은 중산간에 급격한 온도차를 만들어 독특한 구름대와 안개를 형성합니다. 사방의 바다로 생성된 해무 발생일수도 연평균 25일에 달해, 자연이 빚은 차광재인 안개가 최적의 그늘을 선사합니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide next">
+                        <div class="slideContent soil">
+                            <div class="titleArea">
+                                <h3>생명을 품은 화산섬의 흙</h3>
+                                <p class="subTitle">최대 공극률 75%</p>
+                            </div>
+                            <figure><img src="img/brand/intro_element_2.png" alt="생명을 품은 화산섬의 흙"></figure>
+                            <p class="caption">
+                                제주의 흙은 전 세계적으로도 손꼽히는 공극률로 물과 공기의 흐름을 원활하게 하고 일반 토양보다 10배나 높은 유기물을 함유하고 있습니다. 다공성 제주 현무암의 미세한 틈은 차나무를 건강하게 유지하여 제주차만의 차이를 만들어 냅니다.     
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slideContent water">
+                            <div class="titleArea">
+                                <h3>청정 화산 암반수</h3>
+                                <p class="subTitle">1,800mm 빗물의 천연필터</p>
+                            </div>
+                            <figure><img src="img/brand/intro_element_3.png" alt="청정 화산 암반수"></figure>
+                            <p class="caption">
+                                해발 1,950mm, 화산섬에 우뚝 솟은 한라산은 중산간에 급격한 온도차를 만들어 독특한 구름대와 안개를 형성합니다. 사방의 바다로 생성된 해무 발생일수도 연평균 25일에 달해, 자연이 빚은 차광재인 안개가 최적의 그늘을 선사합니다.     
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slideContent wind">
+                            <div class="titleArea">
+                                <h3>제주의 거친 바람 </h3>
+                                <p class="subTitle">연평균 초속 4~7m</p>
+                            </div>
+                            <figure><img src="img/brand/intro_element_4.png" alt="제주의 거친 바람"></figure>
+                            <p class="caption">
+                                거친 제주의 바람이지만 실은 차 재배에는 더 없이 소중한 제주의 바람입니다. 남쪽의 먼 바다에서 연평균 초속 4~7m의 거센 바람이 불어와 뿌리의 수분 흡수를 증가시켜 차의 향기를 짙게 만들고, 찻잎의 불순물을 씻어내는 에어워셔의 효과로 제주 차만의 특별함을 더합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- //swiper-wrapper -->
+                <div class="swiperControl">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            <!-- 스와이퍼 -->
+        </div>
+    </section>
+    <!-- //brandStory -->
+    <section id="teaField">
+        <div class="inner">
+            <div class="teaMain">
+                <div class="teaFieldTitle">
+                    <h3>오설록의 제주 차밭</h3>
+                    <p class="desc">약 100만 평에 달하는 3개의 오설록 유기농 차밭은<br>화산섬의 지역적 기후 환경에 따라 각각의 색과 향, 그리고<br>맛이 특별한 차를 생산하고 있습니다.</p>
+                    <button class="btnDropbox">유기농/품질관리 인증 정보</button>
+                </div>
+                <figure><img src="img/brand/tea_field.png" alt="서광 차밭, 돌송이 차밭, 한남 차밭"></figure>
+            </div>
+        </div>
+        <div class="modalBox">
+            <div class="modalHeader">
+                <p class="title">유기농/품질관리 인증 정보</p>
+                <button class="btnModalClose"><img src="img/icon/modal_close_btn.svg" alt="닫기"></button>
+            </div>
+            <ul class="modalContent clear">
+                <li>
+                    <div>
+                        <img src="img/brand/kc_mark_1.png" alt="">
+                        <p class="desc">USDA-NOP<br>미농무성 국가 유기 인증</p>
+                    </div>
+                    <div>
+                        <img src="img/brand/kc_mark_2.png" alt="">
+                        <p class="desc">유럽유기농인증</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/brand/kc_mark_3.png" alt="">
+                        <p class="desc">한국유기농인증</p>
+                    </div>
+                    <div>
+                        <img src="img/brand/kc_mark_4.png" alt="">
+                        <p class="desc">한국유기가공식품인증</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/brand/kc_mark_5.png" alt="">
+                        <p class="desc">식품안전관리인증</p>
+                    </div>
+                    <div>
+                        <img src="img/brand/kc_mark_6.png" alt="">
+                    <p class="desc">식품안전경영시스템</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="bgModal"></div>
+        <!-- //teaMain -->
+        <div id="tea_chagwang" class="teaFieldInfo">
+            <div class="inner">
+                <div class="teaFieldCont">
+                    <div class="teaFieldTitle">
+                        <div class="mainTit">
+                            <h3>색이 좋은 서광 차밭</h3>
+                            <div class="fieldElementWrap">
+                                <img src="img/brand/tea_field_icon_soil.png" alt="흙">
+                                <img src="img/brand/tea_field_icon_fog.png" alt="안개">
+                            </div>
+                        </div>
+                        <p class="desc">
+                            산방산 근처의 서광 차밭은 대기가 한라산을 지나며 많은 구름과 안개를<br>형성하고, 이는 자연 차광 효과를 내 찻잎의 색을 좋게 만듭니다. 온화한<br>기후와 자연 차광 효과는 고급 품질의 차를 만들 때 더없이 좋은 생육<br>조건이 됩니다.
+                        </p>
+                        <button class="btnDropbox">주요 생산 제품</button>
+                    </div>
+                    <!-- // teaFieldCont -->
+                    <div class="locationInfo">
+                        <img src="img/icon/tea_field_icon_map.svg" alt="위치">
+                        <span class="locationMap">제주특별자치도 서귀포시 안덕면 신화역사로 36</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 서광 차밭 -->
+            <div class="modalBox">
+                <div class="modalHeader">
+                    <p class="title">주요 생산제품</p>
+                    <button class="btnModalClose"><img src="img/icon/modal_close_btn.svg" alt="닫기"></button>
+                </div>
+                <div class="modalContent">
+                    <img src="img/brand/tea_field_product_1.png" alt="">
+                    <p class="desc">프리미엄 말차</p>
+                </div>
+            </div>
+            <div class="bgModal"></div>
+        </div>
+        <!-- //teaField - tea_chagwang -->
+        <div id="tea_dolsongi" class="teaFieldInfo">
+            <div class="inner">
+                <div class="teaFieldCont">
+                    <div class="teaFieldTitle">
+                        <div class="mainTit">
+                            <h3>향이 좋은 돌송이 차밭</h3>
+                            <div class="fieldElementWrap">
+                                <img src="img/brand/tea_field_icon_light.png" alt="빛">
+                                <img src="img/brand/tea_field_icon_water.png" alt="물">
+                                <img src="img/brand/tea_field_icon_wind.png" alt="바람">
+                            </div>
+                        </div>
+                        <p class="desc">
+                            돌송이 차밭 지역은 예로부터 화산재가 굳어서 돌멩이같이 잘게 부서진<br>화산송이가 많아 ‘돌송이’라고 불리어 왔습니다. 이곳은 산과 바다를<br>동시에 접하고 있어 매년 4월 한라산의 잔설을 품은 산바람과 바다의<br>수분을 머금은 바닷바람이 밤낮으로 불어와 돌송이 차밭에서 채엽한<br>차는 향이 매우 좋습니다
+                        </p>
+                        <button class="btnDropbox">주요 생산 제품</button>
+                    </div>
+                    <!-- // teaFieldCont -->
+                    <div class="locationInfo">
+                        <img src="img/icon/tea_field_icon_map.svg" alt="위치">
+                        <span class="locationMap">제주특별자치도 서귀포시 중산간서로356번길 152-41</span>
+                    </div>
+                </div>
+            </div>
+            <!-- //dolsongi -->
+            <div class="modalBox">
+                <div class="modalHeader">
+                    <p class="title">주요 생산제품</p>
+                    <button class="btnModalClose"><img src="img/icon/modal_close_btn.svg" alt="닫기"></button>
+                </div>
+                <div class="modalContent">
+                    <img src="img/brand/tea_field_product_2.png" alt="">
+                    <p class="desc">일로향</p>
+                </div>
+            </div>
+            <div class="bgModal"></div>
+        </div>
+        <!-- //teaField - tea_dolsongi -->
+        <div id="tea_hannam" class="teaFieldInfo">
+            <div class="inner">
+                <div class="teaFieldCont">
+                    <div class="teaFieldTitle">
+                        <div class="mainTit">
+                            <h3>맛이 좋은 한남 차밭</h3>
+                            <div class="fieldElementWrap">
+                                <img src="img/brand/tea_field_icon_soil.png" alt="흙">
+                                <img src="img/brand/tea_field_icon_water.png" alt="물">
+                                <img src="img/brand/tea_field_icon_wind.png" alt="바람">
+                            </div>
+                        </div>
+                        <p class="desc">
+                            과거 ‘해들이밭’이라 하여 마을에서 가장 먼저 해가 드는 곳이라 불렸던<br>한남 차밭은 온화한 기후에서 성장해 차나무가 어리고 아미노산 함량이<br>높아 뛰어난 맛을 선사합니다.
+                        </p>
+                        <button class="btnDropbox">주요 생산 제품</button>
+                    </div>
+                    <!-- // teaFieldCont -->
+                    <div class="locationInfo">
+                        <img src="img/icon/tea_field_icon_map.svg" alt="위치">
+                        <span class="locationMap">제주특별자치도 서귀포시 남원읍 서성로652번길 166</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modalBox">
+                <div class="modalHeader ">
+                    <p class="title">주요 생산제품</p>
+                    <button class="btnModalClose"><img src="img/icon/modal_close_btn.svg" alt="닫기"></button>
+                </div>
+                <div class="modalContent">
+                    <div>
+                        <img src="img/brand/tea_field_product_3.png" alt="">
+                        <p class="desc">홍우전</p>
+                    </div>
+                    <div>
+                        <img src="img/brand/tea_field_product_4.png" alt="">
+                        <p class="desc">제주화산암차</p>
+                    </div>
+                    <div>
+                        <img src="img/brand/tea_field_product_5.png" alt="">
+                        <p class="desc">청우롱</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bgModal"></div>
+        </div>
+        <!-- //teaField - tea_hannam -->
+    </section>
+    <!-- //teaField -->
+    <section id="speciality">
+        <div class="inner">
+            <div class="titleArea">
+                <h3>오설록의 차가 특별한 이유</h3>
+                <p class="subTitle">1979년, 돌과 바람이 전부였던 제주의 땅에서 시작해 최고의 차를 생산하기까지,<br>오설록의 차가 특별한 이유를 만나보세요.</p>
+            </div>
+            <ul class="specialityList clear">
+                <li>
+                    <div class="itemTitleArea brown">
+                        <p class="title">자연을 숨쉬게<br>하는 차밭</p>
+                        <div class="tabButtonWrap">
+                            <button>자연을 지키는 유기농 차밭</button>
+                            <button>Farm to Cup</button>
+                        </div>
+                    </div>
+                    <div class="tabContBox">
+                        <div>
+                            <p class="caption">
+                                제주 오설록의 유기농 차밭은 연간 11,176톤의 이산화탄소를 흡수합니다. 이는 과수작물 대비 3배 이상의 탄소 축적 효과가 있습니다. 차 나무는<br>인류에게 건강한 차를 제공하며 동시에 지구의 건강한 환경에도 기여하고<br>있습니다.
+		                    </p>
+                        </div>
+                        <div>
+                            <p class="caption">
+                                오설록은 믿을 수 있는 품질의 차를 생산하기 위해 직접 차 나무를 재배하고 찻잎을 가공하여 차 제품을 고객에게 전달하기까지 전 과정을 통합적으로 관리하고 있습니다.   
+                            </p>
+                            <figure><img src="img/brand/speciality_item_bg_2_1.png" alt=""></figure>
+                        </div>
+                    </div>
+                    <!-- //tabContBox -->
+                </li>
+                <!-- //자연을 숨쉬게 하는 차밭 -->
+                <li>
+                    <div class="itemTitleArea green">
+                        <p class="title">그대로의 제주를<br>담은 차</p>
+                        <div class="tabButtonWrap">
+                            <button>제주의 향기를 담다</button>
+                            <button>제주와 상생하는 차</button>
+                        </div>
+                    </div>
+                    <div class="tabContBox">
+                        <div>
+                            <p class="caption">
+                                제주의 겨울 바닷바람을 이기고 핀 제주 동백꽃, 제주의 돌담길을 걸을 때 풍겨오는 제주 귤꽃, 하얗게 수놓은 제주 자생종인 왕벚꽃, 일 년에 단 열흘만 꽃을 피우는 제주 한란 등 제주에 서식하는 꽃을 '헤드스페이스' 기법을 통해 원물의 훼손없이 꽃향을 포집하여 제주의 향기 그대로 차에 담았습니다.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="caption">
+                                오설록의 블렌디드는 제주의 꽃과 과일을 담고 있습니다. 제주의 땅에서 난 것들로 차를 만들며 제주의 자연과 상생하고 있습니다.
+                            </p>
+                            <figure><img src="img/brand/speciality_item_bg_4_1.png" alt=""></figure>
+                        </div>
+                    </div>
+                    <!-- //tabContBox -->
+                </li>
+                <!-- //그대로의 제주를 담은 차 -->
+                <li>
+                    <div class="itemTitleArea yellow">
+                        <p class="title">깊이를 찾는<br>발효의 기술</p>
+                        <div class="tabButtonWrap">
+                            <button>제주의 자연이 선물한 발효</button>
+                            <button>삼나무가 전하는 깊이</button>
+                        </div>
+                    </div>
+                    <div class="tabContBox">
+                        <div>
+                            <p class="caption">
+                                제주의 봄볕 아래 약발효한 섬세한 꽃향미, 따뜻한 제주 바람으로 발효한 건과일의 깊은 풍미 등 제주의 기후로 만들어진 특별한 발효를 통해 오설록의 발효 명차는 만들어집니다.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="caption">
+                                한국 전통 장류에서 유래한 고초균으로 찻잎 발효 후, 제주 삼나무와 함께 숙성하여 착향된 그윽한 삼나무 향미는 제주에서만 발효되는 깊이 있는 차맛을 경험할 수 있습니다.
+                            </p>
+                            <figure><img src="img/brand/speciality_item_bg_6_1.png" alt=""></figure>
+                        </div>
+                    </div>
+                    <!-- //tabContBox -->
+                </li>
+                <!-- //깊이를 찾는 발효의 기술 -->
+                <li>
+                    <div class="itemTitleArea black">
+                        <p class="title">기술이 만드는<br>내일의 차</p>
+                        <div class="tabButtonWrap">
+                            <button>오직 차를 위한 연구소</button>
+                            <button>해를 가리고 색을 얻다</button>
+                        </div>
+                    </div>
+                    <div class="tabContBox">
+                        <div>
+                            <p class="caption">
+                                오설록은 국내 단일 최대 규모의 연구소를 설립하여 끊임없는 차에 대한 연구로차 품질 뿐 아니라 미래 차 산업의 발전을위하여 품종 연구 및 육종, 유기 재배 기술 등을 연구하고 있습니다. 
+                            </p>
+                        </div>
+                        <div>
+                            <p class="caption">
+                                곡우 전 약 2주간, 오설록의 제주 차밭에서는 차나무의 빛을 차단하여 찻잎이 더욱청명한 녹색을 띄게 됩니다. 이를 통해찻잎의 쓴맛은 덜하고 감미가 높아지는데, 이렇게 수확한 찻잎은 오설록만의 특별한 가루차 전용 설비를 통해 높은 품질의말차가 생산됩니다.
+                            </p>
+                            <figure><img src="img/brand/speciality_item_bg_8.jpg" alt=""></figure>
+                        </div>
+                    </div>
+                    <!-- //tabContBox -->
+                </li>
+                <!-- //기술이 만드는 내일의 차 -->
+            </ul>
+            <!-- //specialityList -->
+            </div>
+        </div>
+    </section>
+    <!-- //speciality -->
+    <section id="since">
+        <div class="inner w0">
+            <div class="titleArea">
+                <h3>Since 1979</h3>
+                <p class="subTitle">차밭을 개간한 집념을 근간으로 차를 재배하고, 가공 발효하여 세계적으로 권위있는 명차 대회에서<br>꾸준히 수상을 이어가며 증명된 오설록의 차는 이제 전 세계의 사람들과 만나고 있습니다.</p>
+            </div>
+            <div class="sinceInfoArea">
+                <div class="swiper sinceAbout">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/since_image_01.jpg" alt=""></figure>
+                            <p class="title">1979</p>
+                            <p class="desc">
+                                우리의 전통 차문화 정립을 위한
+                                차 사업의 시작 제주 돌송이차밭 부지 돌밭 개간 착공
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/since_image_1980.jpg" alt=""></figure>
+                            <p class="title">1980</p>
+                            <p class="desc">
+                                설록차 브랜드 발매<br>첫번째 녹차 만수, 천수, 백수 출시
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/since_image_1983.jpg" alt=""></figure>
+                            <p class="title">1983</p>
+                            <p class="desc">
+                                국내 최초 차 전문 매거진 태평양 &lt;설록차&gt; 창간
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/since_image_02.jpg" alt=""></figure>
+                            <p class="title">1984</p>
+                            <p class="desc">
+                                서광 차밭 조성
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/since_image_1993.jpg" alt=""></figure>
+                            <p class="title">1993</p>
+                            <p class="desc">
+                                고급 잎녹차를 우려낸 한국 최초 캔녹차 출시
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/since_image_1995.jpg" alt=""></figure>
+                            <p class="title">1995</p>
+                            <p class="desc">
+                                과학적 기계관리가 용이한 한남차밭 조성
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/since_image_1999.jpg" alt=""></figure>
+                            <p class="title">1999</p>
+                            <p class="desc">
+                                설록명차 일로향 출시
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/since_image_04.jpg" alt=""></figure>
+                            <p class="title">2001</p>
+                            <p class="desc">
+                                제주 오설록 티뮤지엄 개관
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/since_image_2002.jpg" alt=""></figure>
+                            <p class="title">2002</p>
+                            <p class="desc">
+                                차 업계 최초 전공장 HACCP 인증
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/since_image_2005.jpg" alt=""></figure>
+                            <p class="title">2005</p>
+                            <p class="desc">
+                                도심속 작은 제주, 티하우스 1호 서울 명동점 오픈
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/since_image_2009.jpg" alt=""></figure>
+                            <p class="title">2009</p>
+                            <p class="desc">
+                                일로향, 북아메리카 티 챔피언십’ 덖음차부문 1위 세작, 일본 시즈오카 세계녹차콘테스트 금상  
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/since_image_2010.jpg" alt=""></figure>
+                            <p class="title">2010</p>
+                            <p class="desc">
+                                유기농 인증인 USDA-NOP(미농무성 국가 유기 인증) 획득, 유기농 인증인 IFORM(국제유기농협회 인증) 획득, 기타 국/내외 유기농 인증마크 획득  
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/since_image_05.jpg" alt=""></figure>
+                            <p class="title">2013</p>
+                            <p class="desc">
+                                제주 오설록 티스톤 오픈
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/since_image_2015.jpg" alt=""></figure>
+                            <p class="title">2015</p>
+                            <p class="desc">
+		                        북아메리카 티 챔피언십 덖음차부문 1,2,3위 석권<br>2,500여개의 차 중에서 세작이 1위에 이어 우전과 일로향이 2,3위 모두 석권
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/since_image_2016.jpg" alt=""></figure>
+                            <p class="title">2016</p>
+                            <p class="desc">
+                                세계 녹차 협회 WORLD TEA CONTEST 금상 [삼다연 삼 병차]  
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/since_image_2018.jpg" alt=""></figure>
+                            <p class="title">2018</p>
+                            <p class="desc">
+                                제주 프리미엄 티의 품격을 선보이는 티하우스 '오설록 1979'
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/since_image_2020.jpg" alt=""></figure>
+                            <p class="title">2020</p>
+                            <p class="desc">
+                                세계 녹차 협회 WORLD TEA CONTEST 금상 [일로향]
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/since_image_07.jpg" alt=""></figure>
+                            <p class="title">2020</p>
+                            <p class="desc">
+                                독일 IF디자인어워드 패키지 부문 수상(순수차)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiperContol">
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+                <!-- //sinceAbout -->
+            </div>
+            <!-- //sinceInfoArea -->
+        </div>
+    </section>
+    <!-- //since -->
+    <section id="people">
+        <div class="inner w0">
+            <div class="titleArea">
+                <h3>사람, 차를 만나다</h3>
+                <p class="subTitle">억척스런 제주 사람의 손조차 한 번도 닿지 않은 채 버려진 세 곳의 땅을<br>제주의 자연을 이해하고 극복하며 한국의 차 문화를 잇기 위해 개간된 제주의 땅은<br>45년이 지난 지금 세계적인 차 산지로 손꼽히는 최고의 차 재배지로 거듭났습니다.</p>
+            </div>
+            <div class="peopleInfoArea">
+                <div class="swiper peopleAbout">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/people_1.jpg" alt=""></figure>
+                            <p class="caption">차나무를 정성스럽게 살펴보는 고 장원 서성환 회장</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/people_2.jpg" alt=""></figure>
+                            <p class="caption">돌송이차밭 계획 부지에서 고 장원 서성환 회장과 일행</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/people_3.jpg" alt=""></figure>
+                            <p class="caption">서광 차밭 차묘목 식재 작업</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure><img src="img/brand/people_4.jpg" alt=""></figure>
+                            <p class="caption">손으로 찻잎을 채엽하는 모습</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="dadaLife">
+        <div class="inner">
+            <div class="titleArea">
+                <h3>다다일상,<br>차와 함께하는 삶</h3>
+                <p class="subTitle">차를 마시는 것은 일상의 쉼을 가지며, 나를 이끌어내고 세상을 따뜻하게 바라보는 것에 관한 일입니다.<br>당신이 언제 어디에 있든 차와 함께 삶의 아름다운 여백을 만들어 나가길 바랍니다.</p>
+            </div>
+            <div class="dadaLifeList">
+                <ul class="section-row">
+                    <li class="col-2">
+                        <img src="img/brand/dada_1.jpg" alt="">
+                        <img src="img/brand/dada_2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/brand/dada_3.jpg" alt="">
+                        <p class="desc">
+                            차 한 잔은 차분하게 하루를 정리하고 내일로 한 걸음 더 나아가게 만드는 기분이 들어요. 하루를 마무리하는 온점 같은 시간이라고 할까.
+                            <span class="caption">가구 브랜드 대표 양윤선</span>
+                        </p>
+                    </li>
+                    <li class="col-2">
+                        <img src="img/brand/dada_4.jpg" alt="">
+                        <img src="img/brand/dada_5.jpg" alt="">
+                    </li>
+                </ul>
+                <ul class="section-row">
+                    <li class="col-2">
+                        <img src="img/brand/dada_6.jpg" alt="">
+                        <img src="img/brand/dada_7.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/brand/dada_8.jpg" alt="">
+                        <p class="desc">
+                            운동을 매일 하는 것도 중요하지만 가장 신경 쓰는 부분은 수분 보충이에요. 운동 전에 물을 마시고 운동을 마치면 따뜻한 차를 마셔요.
+                            <span class="caption">러닝 트레이너 임소영</span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/brand/dada_9.jpg" alt="">
+                        <p class="desc top">
+                            후각이 예민하다 보니 차를 마실 때도 향을 가장 신경 써요. 좋은 향을 내는 차가 심신에 안정을 줘서 더 즐기게 됐어요.
+                            <span class="caption">채식 요리 연구가 신주하</span>
+                        </p>
+                    </li>
+                </ul>
+                <ul class="section-row">
+                    <li>
+                        <img src="img/brand/dada_10.jpg" alt="">
+                        <p class="desc">
+                            작업에 집중하기 시작하면 쉴 틈이 없는 제게, 차 한잔의 여유는 정말<br>소중하거든요.
+                            <span class="caption">테이핑 아티스트 박건우</span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/brand/dada_11.jpg" alt="">
+                        <p class="desc top">
+                            차가운 공기 때문인지 진한 자연의 냄새와 차 향이 함께 느껴지는데 집에서 마실 때와는 또 다르더라고요.       
+                            <span class="caption">오지 캠퍼 강서구</span>
+                        </p>
+                    </li>
+                    <li class="col-2">
+                        <img src="img/brand/dada_12.jpg" alt="">
+                        <img src="img/brand/dada_13.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //dadaLife -->
+    <section id="moreStory">
+        <div class="inner">
+            <div class="titleArea">
+                <h3>오설록의 더 많은 이야기를 만나보세요.</h3>
+            </div>
+            <div class="btnArea">
+                <a href="#">다다일상 기록</a>
+                <a href="#">베스트 제품</a>
+                <a href="#">선물추천</a>
+            </div>
+        </div>
+    </section>
+    <!-- //moreStory -->
+    <footer>
+        <div class="ftSns">
+            <div class="ftInner">
+                <div class="snsArea">
+                    <button class="logIn">로그인</button>
+                    <a href="https://www.tiktok.com/@osulloc_official" class="sns_t"><img src="img/icon/sns_t.png" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA" class="sns_y"><img src="img/icon/sns_y.png" alt=""></a>
+                    <a href="https://www.instagram.com/osulloc_official/" class="sns_t"><img src="img/icon/sns_i.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="ftAbout">
+            <div class="ftInner clear">
+                <div class="ftInfo clear">
+                    <div class="contact">
+                        <p class="title">고객상담센터&middot;주문/배송문의</p>
+                        <a href="#" class="mail">help@osulloc.com</a>
+                        <p class="call">080-805-5555</p>
+                        <p class="onTime">평일 09:30 - 17:00 (점심 11:30 - 13:00)</p>
+                    </div>
+                    <div class="order">
+                        <p class="title">특판, 대량구매 문의</p>
+                        <a href="#" class="mail">mall@osulloc.com</a>
+                        <p class="kakao">카카오톡ID : osullocmall</p>
+                        <p class="onTime">평일 09:30 - 17:00 (점심 11:30 - 13:00)</p>
+                    </div>
+                </div>
+                <!-- //ftInfo -->
+                <div class="ftIcon">
+                    <a href="#"><img src="img/icon/f1.png" alt="매장안내"><span>매장안내</span></a>
+                    <a href="#"><img src="img/icon/f2.png" alt="멤버십혜택"><span>멤버십혜택</span></a>
+                    <a href="#"><img src="img/icon/f5.png" alt="대량구매"><span>대량구매</span></a>
+                    <a href="#"><img src="img/icon/f4.png" alt="1:1문의"><span>1:1문의</span></a>
+                    <a href="#"><img src="img/icon/beauti.png" alt="뷰티포인트 추후적립"><span>뷰티포인트<br>추후적립</span></a>
+                </div>
+                <!-- //ftIcon -->
+            </div>
+        </div>
+        <!-- //ftAbout -->
+        <div class="ftBottom">
+            <div class="ftInner">
+                <div class="ftAdressArea clear">
+                    <a href="#" id="logo"><img src="img/icon/f_logo.png" alt="1:1문의"></a>
+                    <div class="infoArea">
+                        <div class="infoLink">
+                            <a href="#">회사소개</a>
+                            <a href="#">서비스 이용약관</a>
+                            <a href="#"><b>개인정보 처리방침</b></a>
+                            <a href="#">영상정보 처리방침</a>
+                            <a href="#">뷰티포인트</a>
+                            <a href="#">임직원할인</a>
+                            <a href="#">사이트맵</a>
+                            <a href="#">전자공고</a>  
+                        </div>
+                        <p class="adress">
+                            <span>㈜ 오설록</span>
+                            <span>대표이사:서혁제 주소:서울특별시 용산구 한강대로 100, 14층(한강로2가) 사업자등록번호: 390-87-01499<a href="#">사업자 정보확인 ></a></span>
+                            <span>통신판매업신고번호:2019-서울용산-1173호 호스팅제공자: ㈜오설록</span>
+
+                            <span class="heigth2">(주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 통신판매중개자 이며 통신판매의 당사자가 아닙니다.</span>
+                            <span>따라서 입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.</span>
+                        </p>
+                    </div>
+                    <!-- //infoArea -->
+                    <div class="kcpBox">
+                        <p class="title">NHN KCP 구매안전(에스크로)서비스</p>
+                        <div class="kcpInner clear">
+                            <p class="desc">
+                                고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에 가입한 NHN KCP의 구매안전서비스를 이용하실 수 있습니다.
+                            </p>
+                            <a href="#"><img src="img/icon/bannerEscrow.png" alt="에스크로 가입사실확인"></a>
+                        </div>
+                    </div>
+                    <!-- //kcpBox -->
+                </div>
+            </div>
+        </div>
+        <!-- ftBottom -->
+        <div class="hideInner"></div>
+    </footer>
+
+    <a href="#" id="goToTop"><img src="img/icon/btn_goTop.png" alt="맨 위로 이동하기"></a>
+    <!-- //본문 끝 -->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/subPage.js"></script>
+    <script src="js/brandStory.js"></script>
+    <script>
+        let delay = 300;
+        let timer = null;
+
+        window.addEventListener('resize', function() {
+            clearTimeout(timer);
+            timer = setTimeout(function() {
+                if (window.innerWidth <= 780) {
+                    window.location.href = "brand_mo.html"
+                }
+            },delay)
+        })
+    </script>
+</body>
+</html>

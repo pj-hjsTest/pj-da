@@ -1,0 +1,178 @@
+@charset "utf-8";
+@import url("font.css");
+
+/* 공통요소 */
+html {font-size: 0.625rem; }
+html.active {overflow: hidden; overflow-y: hidden;}
+body {font-size: 1.6rem; font-family: 'AritaDotum', sans-serif; letter-spacing: -0.54px; color: #333; overflow-x: hidden;}
+.dropBox {position: absolute; top: 60px; text-align: right; background: #fff; display: none;}
+.dropBox li:last-child {padding-bottom: 25px;}
+.dropBox li a {display: block; color:#555; font-size: 15px; font-weight: 400; padding: 20px 20px 8px;}
+section+section {background: #fff;}
+section .inner {max-width: 1200px; margin: 0 auto; padding:0 20px}
+section .inner.w0 {padding: 0; max-width: 100%;}
+/* 공통요소, 콘텐츠 간 여백, 타이틀값 */
+section:nth-of-type(n+5) {padding:160px 0;}
+
+/* mainVisualArea */
+#mainVisualArea {width: 100%; height: calc(100vh - 20px); overflow: hidden; margin-top: 80px; position: fixed; top:0; z-index: -1;}
+#mainVisualArea .videoArea {position:relative; width: 100%; height: 100%;}
+#mainVisualArea video {max-width: 100%;}
+#mainVisualArea .videoTitleArea {display:flex; height: 100%; align-items: center; justify-content: center; position: absolute; top:0; width: 100%; flex-direction: column; z-index: 30;}
+#mainVisualArea .videoTitleArea h1 {font-size: 4.4rem; color: #fff; font-weight: 400; letter-spacing: 9px; font-family: 'Gowun Dodum', sans-serif; margin-bottom: 40px;}
+#mainVisualArea .videoTitleArea .desc {font-weight: 400; color: rgba(255,255,255,0.8); font-size: 2rem; letter-spacing: normal; line-height: 1.65; font-weight: 500; text-align: center;}
+
+/* brandStory */
+#brandStory {margin-top: 130vh; background: #fff; width: 100vw; box-sizing: border-box; padding: 0;}
+.circle {width: 134%; background: #fff; border-radius: 50%; z-index: 10; left:50%; position: absolute; padding-bottom: 40%; margin-top: -9%; transform: translateX(-50%); z-index: -1;}
+/* brandStroy - brandStoryWrap/ 스와이퍼 커스텀 */
+.brandStoryWrap .swiper-wrapper {width: 100%; position: relative; height: 800px;}
+#brandStory .swiper-slide {position: absolute; display: flex; width: 540px; opacity: 0;}
+#brandStory .swiper-slide {display: none; opacity: 0;}
+#brandStory .swiper-slide .slideContent {text-align: center; margin: 0 auto;}
+#brandStory .swiper-slide .slideContent figure{width: 70%; margin: 0 auto;}
+#brandStory .swiper-slide .slideContent figure img{max-width: 100%; border-radius: 50%;}
+#brandStory .swiper-slide.prev  {transform: rotate(-15deg) translate(-42%, 26%); display: flex; opacity: 1; position: absolute; left: 0; display: flex;opacity: 1;}
+#brandStory .swiper-slide.next {transform: rotate(15deg) translate(42%, 26%); display: flex; position: absolute; top:0; left:none; right:0; display: flex;opacity: 1;}
+#brandStory .swiper-slide.now {display: flex; top:0; left: 50%; transform: translateX(-50%);display: flex; opacity: 1; position: relative; z-index: 30;}
+#brandStory .swiper-slide.prev .titleArea, #brandStory .swiper-slide.prev .caption, #brandStory .swiper-slide.next .titleArea, #brandStory .swiper-slide.next .caption {display: none;}
+/* 스와이퍼 버튼 */
+/* .brandStoryWrap .swiper-wrapper {transition: opacity 0s;} */
+#brandStory .brandStoryWrap .swiper-button-prev::after, #brandStory .brandStoryWrap .swiper-button-next::after{display: none;}
+#brandStory .brandStoryWrap .swiper-button-prev {width: 68px; height: 68px; background: url(../img/icon/element_swiper_arrow.png) no-repeat center/24px; position: absolute; left:24%; border-radius: 50%; border: 1px solid #ccc; transform: rotate(-15deg);}
+#brandStory .brandStoryWrap .swiper-button-next {width: 68px; height: 68px; background: url(../img/icon/element_swiper_arrow.png) no-repeat center/24px; position: absolute; right:24%; border-radius: 50%; border: 1px solid #ccc; transform: rotate(195deg);}
+/* brandStroy - brandStoryWrap/ 콘텐츠 */
+.brandStoryWrap {width: 100%; display: flex; justify-content: center; padding-bottom: 160px;}
+#brandStory .brandStoryWrap .slideContent h3 {font-family: 'Gowun Dodum', sans-serif; line-height: 1.4; font-size: 4.4rem; font-weight: 500; margin-bottom: 14px;}
+#brandStory .brandStoryWrap .slideContent .subTitle {font-size: 2rem; font-weight: 400; margin-bottom: 60px;}
+#brandStory .brandStoryWrap .slideContent .caption {margin: 60px 81px 30px; font-size: 1.8rem; font-weight: 400; line-height: 1.75; letter-spacing: normal;}
+.temp {color: #5F6F55}
+.mist {color: #75828E;}
+.soil {color: #82664F}
+.water{color: #5181AE}
+.wind {color: #717E8F}
+
+/* teaField */
+#teaField {color:#666}
+#teaField h3 {font-family: 'Gowun Dodum', sans-serif; }
+/*  teaField - teaMain */
+#teaField .teaMain {display: flex; justify-content: space-between; margin-bottom: 80px;}
+.teaMain figure {max-width: 435px;}
+.teaMain figure img {max-width: 100%;}
+#teaField .teaMain .teaFieldTitle {width: 50%;}
+/* teaField - teaFieldTitle */
+.teaFieldTitle h3 {font-size: 4.4rem; margin-bottom: 40px; font-weight: 500;}
+.teaFieldTitle .desc {font-size: 1.8rem; margin-bottom: 40px; letter-spacing: normal; line-height: 1.75; font-weight: 500;}
+#teaField .btnDropbox {padding: 0 0 2px 0; line-height: 1.75; border-bottom: 1px solid #666; background: none; font-size: 1.6rem; letter-spacing: -0.03em;
+}
+/* teaField - teaFieldInfo */
+#teaField .teaFieldInfo {width: 100vw; height: 100vh; background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url(../img/brand/tea_field_item_1.jpg) no-repeat center/cover; position: relative;}
+#teaField  #tea_dolsongi {background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url(../img/brand/tea_field_item_2.jpg) no-repeat center/cover;}
+#teaField  #tea_hannam {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url(../img/brand/tea_field_item_3.jpg) no-repeat center/cover;
+}
+.teaFieldInfo .teaFieldCont .mainTit {display: flex; justify-content: space-between; padding: 71px 0; }
+.teaFieldInfo .teaFieldTitle {color:#fff; z-index: 40;}
+.teaFieldInfo .teaFieldTitle h3{font-size: 3.2rem;  margin: 0; line-height: 1.6 ;}
+.teaFieldTitle .fieldElementWrap {height: 48px;}
+.teaFieldTitle .fieldElementWrap img {max-height: 100%; margin-left: 10px;}
+.teaFieldInfo .teaFieldCont .desc{font-weight: 400; letter-spacing: -0.03em; margin-bottom: 40px;}
+#teaField .teaFieldInfo .teaFieldTitle .btnDropbox {color: #fff;  border-color: #fff;}
+.teaFieldInfo .locationInfo {position: absolute; bottom: 71px; left: 50%; transform: translateX(-50%); color: #fff; font-weight: 500; font-size: 1.6rem; text-shadow: 0 0 8px rgba(0,0,0,0.8);}
+
+/* modal */
+#teaField .modalBox {width: 400px; position: fixed; top: 50%; left:50%; transform: translate(-50%, -50%); z-index: 100; overflow: hidden; background: #fff; border-radius: 10px; text-align: center; display: none; backdrop-filter: blur(15px);}
+#teaField .modalBox .modalHeader {padding: 26px 0 20px; font-size: 1.8rem; font-weight: 500; color: #000; text-align: center; display: flex; align-items: center; justify-content: center; position: relative;}
+#teaField .modalBox .modalHeader .btnModalClose {background: none; cursor: pointer;position: absolute; right: 26px; width: 24px; height: 24px; padding: none;}
+#teaField .modalBox .modalContent { padding: 10px 27px 36px; box-sizing: border-box; display: flex; flex-direction: column;}
+#teaField .modalBox .modalContent li {display: flex; justify-content: center; margin-bottom: 12px;}
+#teaField .modalBox .modalContent li:last-child {margin-bottom: 0;}
+#teaField .modalBox .modalContent li div {display: flex; flex-direction: column; justify-content: center; width: 50%; height: 130px;}
+#teaField .modalBox .modalContent div img {width: 80px; margin: 0 auto;}
+#teaField .modalBox .modalContent .desc {font-size: 1.4rem; letter-spacing: normal; line-height: 1.5; margin-top: 8px; text-align: center; font-weight: 500; color: #000}
+#teaField .teaFieldInfo .modalBox{width: 370px; background: rgba(255,255,255,0.5);}
+#teaField .teaFieldInfo .modalBox .modalContent{padding: 40px 45px;}
+#teaField .teaFieldInfo .modalContent img {width: 268px; margin: 0 auto;}
+#teaField .teaFieldInfo .modalContent .desc {font-size: 1.6rem;}
+#teaField #tea_hannam .modalBox {width: auto;}
+#teaField #tea_hannam .modalContent {width: auto; flex-direction: row; justify-content: center;}
+#teaField #tea_hannam .modalContent div img {width: 268px;}
+
+/* 모달 on/off, 모달 백그라운드 */
+#teaField .modalBox.active {display: block;}
+.bgModal {opacity: 0; transition: opacity 0.3s;}
+.bgModal.active {position: fixed; top:0; left:0; right:0; bottom: 0; background: #000; opacity: 0.5; z-index: 50;}
+
+/* section 간 공통영역 */
+section:nth-of-type(n+5) .titleArea {color:#666; text-align: center; opacity:0}
+section:nth-of-type(n+5) .titleArea h3 {font-size: 4.4rem; margin-bottom: 36px; font-family: 'Gowun Dodum', sans-serif; font-weight: 500;}
+section:nth-of-type(n+5) .titleArea .subTitle {margin-bottom: 100px; font-size: 1.8rem; line-height: 1.75;}
+
+/* speciality */
+#speciality .inner {max-width: 1400px;}
+.specialityList {color: #fff; text-align: left;}
+.specialityList li {width: calc(100%/2 - 30px); margin: 0 15px 30px;  display: flex; height: 626px; background: gray; float: left;}
+.specialityList .itemTitleArea {width: 50%; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box; padding:40px; background-color: #59443B;}
+.specialityList .itemTitleArea .title { font-family: 'Gowun Dodum'; font-size: 3.2rem; font-weight: 300;}
+.tabButtonWrap button {font-family: inherit;color:inherit; background: transparent; border: 1px solid #fff; border-radius: 40px; padding:10px 20px; box-sizing: border-box; font-size: 1.8rem; font-weight: 400; transition: all 0.3s; line-height: 1.3;}
+.tabButtonWrap button:first-child {margin-bottom: 16px;}
+.tabButtonWrap button:hover, .tabButtonWrap button.active {background: #fff; color:#666}
+.specialityList .itemTitleArea.green {background-color: #515C30}
+.specialityList .itemTitleArea.yellow {background-color: #98875F}
+.specialityList .itemTitleArea.black {background-color: #1A2924}
+/* speciality -tabContBox */
+.specialityList .tabContBox {width: 50%; background: url(../img/brand/speciality_item_bg_1_1.png) no-repeat center/cover; position: relative;}
+.specialityList .tabContBox div .caption {padding: 40px; line-height: 1.7; font-weight: 600; position: absolute; bottom: 0; letter-spacing: normal; z-index: 30;}
+.specialityList li:nth-child(2) .tabContBox {background-image: url(../img/brand/speciality_item_bg_3_1.png);}
+.specialityList li:nth-child(3)  .tabContBox {background-image: url(../img/brand/speciality_item_bg_5_1.png);}
+.specialityList li:nth-child(4) .tabContBox {background-image: url(../img/brand/speciality_item_bg_6_1.png);}
+.specialityList .tabContBox div figure {width: 100%; height: 626px; overflow: hidden;}
+.tabContBox figure img {max-height: 100%; transform: translateX(-20px);}
+.tabContBox div {display: none;}
+.tabContBox div.active {display: block;}
+
+/* since */
+#since {background: #82664F; }
+#since .inner {width: 1400px;}
+#since .titleArea {color: #fff}
+#since .titleArea h3 {font-family: 'SUIT', sans-serif; font-weight: 300; letter-spacing: 0.02em;}
+#since .titleArea .subTitle {color: rgba(255,255,255,0.8)}
+.sinceInfoArea .sinceAbout {overflow: visible;}
+.sinceInfoArea .sinceAbout .swiper-slide {width: 327.5px; padding-bottom: 80px;}
+.sinceInfoArea .sinceAbout .swiper-slide figure {width: 100%; margin-bottom: 24px;}
+.sinceInfoArea .sinceAbout .swiper-slide figure img {max-width: 100%;}
+.sinceInfoArea .sinceAbout .swiper-slide .title {font-size: 2.4rem; line-height: 1.5; font-weight: 300; margin-bottom: 12px; color: #fff}
+.sinceInfoArea .sinceAbout .swiper-slide .desc {color:rgba(255,255,255,0.7); font-weight: 400; line-height: 1.55; letter-spacing: normal;}
+.sinceAbout .swiper-scrollbar {background: rgba(255,255,255,0.1); height: 2px;}
+.sinceAbout  .swiper-scrollbar-drag {background: #fff;}
+
+/* people */
+#people {background: #F8F8F8;}
+.peopleInfoArea .peopleAbout {overflow: visible;}
+.peopleInfoArea .peopleAbout .swiper-slide {opacity: 0.4; transition: all 0.3s; text-align: center;} 
+.peopleInfoArea .peopleAbout .swiper-slide .caption {margin-top: 34px; display: none; transition: all 0.3s; text-align: center;}
+.peopleInfoArea .peopleAbout .swiper-slide img {max-width: 100%;}
+.peopleInfoArea .peopleAbout .swiper-slide-active {opacity: 1;}
+.peopleInfoArea .peopleAbout .swiper-slide-active .caption {display: block;}
+
+/* dadaLife */
+#dadaLife .inner {max-width: 1400px;}
+#dadaLife .dadaLifeList ul {display: flex; justify-content: space-between; margin-bottom: 30px;}
+#dadaLife .dadaLifeList ul li {margin: 0 15px; position: relative; width: calc(100%/3);}
+#dadaLife .dadaLifeList ul .col-2 {display: flex; flex-direction: column; gap:30px; box-sizing: border-box; height: 50%;}
+#dadaLife .dadaLifeList ul li img {max-width: 100%;}
+#dadaLife .dadaLifeList ul li .desc {position: absolute; bottom:0; padding: 40px 55px; box-sizing: border-box; font-family: 'Gowun Dodum', sans-serif; color: #fff; font-size: 1.8rem; font-weight: 400; letter-spacing: normal; line-height: 1.6; word-break: keep-all;}
+#dadaLife .dadaLifeList ul li .desc.top {top:0; bottom: none;}
+#dadaLife .dadaLifeList ul li .desc .caption {display: block; margin-top: 20px; font-size: 1.4rem;}
+
+/* moreStory */
+#moreStory {padding: 90px 0 250px;}
+#moreStory .titleArea h3 {font-size: 3.6rem; margin-bottom: 62px;}
+#moreStory .btnArea {display: flex;justify-content: center;}
+#moreStory .btnArea a {display: inline-block; width: 240px; box-sizing: border-box; padding: 16px 24px; border: 1px solid #444; line-height: 1.7; font-size: 1.8rem; font-family: inherit; text-align: left; border-radius: 2px; font-weight: 500; margin: 0 27px; color: #111; transition: all 0.3s;}
+#moreStory .btnArea a::after {content: ''; width: 24px; height: 24px; background: url(../img/icon/arrow-right.svg) no-repeat; float: right; margin-top: 2px;}
+#moreStory .btnArea a:hover {background: #444; color: #fff}
+
+/* goToTop */
+#goToTop {position: fixed; bottom: 40px; /* right: 20px; */  right: -50px; width: 32px; height: 32px; transition: all 0.3s ease-in-out; opacity: 0.8;}
+#goToTop.on {right: 20px; opacity: 1;}
